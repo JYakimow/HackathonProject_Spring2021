@@ -14,20 +14,52 @@ namespace HackathonProject_Spring2021
     public partial class Form1 : Form
     {
         int quanitity = 1;
-        float total = 0;
-        float Amount = 0;
-        float tempPrice = 0;
+        double total = 0;
+        double Amount = 0;
+        double tempPrice = 0;
+        string OrderBox = "";
+        Ingredient[] ingredientArr;
 
-        String OrderBox = "";
+        //MessageBox.Show("test");
+        //var test = new Ingredient("test", 1.0);
+
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //test
+            //arrays here
+            ingredientArr = new Ingredient[11];
+            //fill ingredients
+            Ingredient Regular_bun = new Ingredient("Regular bun", 0.30);
+            ingredientArr[0] = Regular_bun;
+            Ingredient WholeWheat_bun = new Ingredient("Whole Wheat bun", 0.20);
+            ingredientArr[1] = WholeWheat_bun;
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            ingredientArr[2] = FriedChicken_Patty;
+            Ingredient GrilledChicken_Patty = new Ingredient("Grilled Chicken Patty", 0.40);
+            ingredientArr[3] = GrilledChicken_Patty;
+            Ingredient Pickles = new Ingredient("Pickles", 0.15);
+            ingredientArr[4] = Pickles;
+            Ingredient Chedder_Cheese = new Ingredient("Chedder Cheese", 0.30);
+            ingredientArr[5] = Chedder_Cheese;
+            Ingredient CobyJack_Cheese = new Ingredient("Coby Jack Cheese", 0.30);
+            ingredientArr[6] = CobyJack_Cheese;
+            Ingredient PepperJack_Cheese = new Ingredient("Pepper Jack Cheese", 0.30);
+            ingredientArr[7] = PepperJack_Cheese;
+            Ingredient Bacon = new Ingredient("Bacon", 0.10);
+            ingredientArr[8] = Bacon;
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            ingredientArr[9] = Tomatoes;
+            Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
+            ingredientArr[10] = Lettuce;
 
+
+
+            //MessageBox.Show(test.name);
         }
 
         private void richTextBox_output_TextChanged(object sender, EventArgs e)
@@ -40,7 +72,15 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Chick_fil_A_Chicken_Sandwich_Ingredients = new Ingredient[3];
+            Ingredient Regular_Bun = new Ingredient("Regular Bun", 0.30);
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            Ingredient Pickles = new Ingredient("Pickles", 0.15);
+            Chick_fil_A_Chicken_Sandwich_Ingredients[0] = Regular_Bun;
+            Chick_fil_A_Chicken_Sandwich_Ingredients[1] = FriedChicken_Patty;
+            Chick_fil_A_Chicken_Sandwich_Ingredients[2] = Pickles;
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich - $" + tempPrice;
@@ -51,7 +91,19 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Deluxe Sandwitch
         private void button2_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Chick_fil_A_Deluxe_Sandwitch_Ingredients = new Ingredient[5];
+            Ingredient Regular_Bun = new Ingredient("Regular Bun", 0.30);
+            Ingredient Chedder_Cheese = new Ingredient("Chedder Cheese", 0.30);
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
+            Chick_fil_A_Deluxe_Sandwitch_Ingredients[0] = Regular_Bun;
+            Chick_fil_A_Deluxe_Sandwitch_Ingredients[1] = Chedder_Cheese;
+            Chick_fil_A_Deluxe_Sandwitch_Ingredients[2] = FriedChicken_Patty;
+            Chick_fil_A_Deluxe_Sandwitch_Ingredients[3] = Tomatoes;
+            Chick_fil_A_Deluxe_Sandwitch_Ingredients[4] = Lettuce;
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich - $" + tempPrice;
@@ -62,7 +114,15 @@ namespace HackathonProject_Spring2021
         //Spicy Chicken Sandwitch
         private void button3_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Spicy_Chicken_Sandwitch_Ingredients = new Ingredient[3];
+            Ingredient Regular_Bun = new Ingredient("Regular Bun", 0.30);
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            Ingredient Pickles = new Ingredient("Pickles", 0.15);
+            Spicy_Chicken_Sandwitch_Ingredients[0] = Regular_Bun;
+            Spicy_Chicken_Sandwitch_Ingredients[1] = FriedChicken_Patty;
+            Spicy_Chicken_Sandwitch_Ingredients[2] = Pickles;
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Chicken Sandwich - $" + tempPrice;
@@ -73,7 +133,21 @@ namespace HackathonProject_Spring2021
         //Spicy Deluxe Sandwitch
         private void button4_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Spicy_Deluxe_Sandwich_Ingredients = new Ingredient[5];
+            Ingredient Regular_Bun = new Ingredient("Regular_Bun", 0.30);
+            Ingredient Pepper_Jack_Cheese = new Ingredient("Pepper Jack Cheese", 0.30);
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
+            Spicy_Deluxe_Sandwich_Ingredients[0] = Regular_Bun;
+            Spicy_Deluxe_Sandwich_Ingredients[1] = Pepper_Jack_Cheese;
+            Spicy_Deluxe_Sandwich_Ingredients[2] = FriedChicken_Patty;
+            Spicy_Deluxe_Sandwich_Ingredients[3] = Tomatoes;
+            Spicy_Deluxe_Sandwich_Ingredients[4] = Lettuce;
+            
+
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Deluxe Sandwich - $" + tempPrice;
@@ -84,7 +158,17 @@ namespace HackathonProject_Spring2021
         //Grilled Chicken Sandwitch
         private void button5_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Grilled_Chicken_Sandwitch_Ingredients = new Ingredient[4];
+            Ingredient Regular_Bun = new Ingredient("Regular_Bun", 0.30);
+            Ingredient Grilled_Chicken_Patty = new Ingredient("Grilled Chicken Patty", 0.40);
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            Ingredient Lettuce = new Ingredient("Pickles", 0.20);
+            Grilled_Chicken_Sandwitch_Ingredients[0] = Regular_Bun;
+            Grilled_Chicken_Sandwitch_Ingredients[1] = Grilled_Chicken_Patty;
+            Grilled_Chicken_Sandwitch_Ingredients[2] = Tomatoes;
+            Grilled_Chicken_Sandwitch_Ingredients[3] = Lettuce;
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Chicken Sandwich - $" + tempPrice;
@@ -95,7 +179,21 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Grilled Chicken Club Sandwitch
         private void button6_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients = new Ingredient[6];
+            Ingredient Whole_Wheat_Bun = new Ingredient("Whole Wheat Bun", 0.20);
+            Ingredient Bacon = new Ingredient("Bacon", 0.10);
+            Ingredient Coby_Jack_Cheese = new Ingredient("Coby_Jack_Cheese", 0.30);
+            Ingredient Grilled_Chicken_Patty = new Ingredient("Grilled Chicken Patty", 0.40);
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
+            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[0] = Whole_Wheat_Bun;
+            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[1] = Bacon;
+            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[2] = Coby_Jack_Cheese;
+            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[3] = Grilled_Chicken_Patty;
+            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[4] = Tomatoes;
+            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[5] = Lettuce;
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwich - $" + tempPrice;
@@ -106,7 +204,19 @@ namespace HackathonProject_Spring2021
         //Grilled Spicy Deluxe
         private void button7_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Ingredient[] Grilled_Spicy_Deluxe_Ingredients = new Ingredient[5];
+            Ingredient Whole_Wheat_Bun = new Ingredient("Whole Wheat Bun", 0.20);
+            Ingredient Coby_Jack_Cheese = new Ingredient("Coby Jack Cheese", 0.30);
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
+            Grilled_Spicy_Deluxe_Ingredients[0] = Whole_Wheat_Bun;
+            Grilled_Spicy_Deluxe_Ingredients[1] = Coby_Jack_Cheese;
+            Grilled_Spicy_Deluxe_Ingredients[2] = FriedChicken_Patty;
+            Grilled_Spicy_Deluxe_Ingredients[3] = Tomatoes;
+            Grilled_Spicy_Deluxe_Ingredients[4] = Lettuce;
+
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Spicy Deluxe - $" + tempPrice;
@@ -117,7 +227,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Nuggets
         private void button8_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Nuggets - $" + tempPrice;
@@ -128,7 +238,7 @@ namespace HackathonProject_Spring2021
         //Grilled Nuggets
         private void button9_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Nuggets - $" + tempPrice;
@@ -141,7 +251,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Waffle Potato Fries
         private void button19_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Waffle Potato Fries - $" + tempPrice;
@@ -152,7 +262,7 @@ namespace HackathonProject_Spring2021
         //Fruit Cup
         private void button20_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Fruit Cup - $" + tempPrice;
@@ -163,7 +273,7 @@ namespace HackathonProject_Spring2021
         //Side Salad
         private void button21_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Side Salad - $" + tempPrice;
@@ -174,7 +284,7 @@ namespace HackathonProject_Spring2021
         //Mac and Cheese
         private void button22_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Mac and Cheese - $" + tempPrice;
@@ -185,7 +295,7 @@ namespace HackathonProject_Spring2021
         //Chicken Noodle Soup
         private void button23_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chicken Noodle Soup - $" + tempPrice;
@@ -196,7 +306,7 @@ namespace HackathonProject_Spring2021
         //Chicken Tortilla Soup
         private void button24_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chicken Tortilla Soup - $" + tempPrice;
@@ -207,7 +317,7 @@ namespace HackathonProject_Spring2021
         //Kale Crunch Side
         private void button25_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Kale Crunch Side - $" + tempPrice;
@@ -218,7 +328,7 @@ namespace HackathonProject_Spring2021
         //Greek Yogurt Parfait
         private void button26_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Greek Yogurt Parfait - $" + tempPrice;
@@ -229,7 +339,7 @@ namespace HackathonProject_Spring2021
         //Waffle Potato Chips
         private void button27_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Waffle Potato Chips - $" + tempPrice;
@@ -330,8 +440,11 @@ namespace HackathonProject_Spring2021
             amtTender.ShowDialog();
         }
 
+        private void button_modifyExisting_Click(object sender, EventArgs e)
+        {
+            Form_editAnItem aForm = new Form_editAnItem();
+            aForm.ShowDialog();
+        }
     }
-
-
 }     
 

@@ -100,6 +100,7 @@ namespace HackathonProject_Spring2021
             // 
             this.richTextBox_output.Location = new System.Drawing.Point(360, 3);
             this.richTextBox_output.Name = "richTextBox_output";
+            this.richTextBox_output.ReadOnly = true;
             this.richTextBox_output.Size = new System.Drawing.Size(301, 500);
             this.richTextBox_output.TabIndex = 1;
             this.richTextBox_output.Text = "";
@@ -569,18 +570,19 @@ namespace HackathonProject_Spring2021
             // 
             // button_modifyExisting
             // 
-            this.button_modifyExisting.Location = new System.Drawing.Point(183, 1);
+            this.button_modifyExisting.Location = new System.Drawing.Point(172, 1);
             this.button_modifyExisting.Name = "button_modifyExisting";
             this.button_modifyExisting.Size = new System.Drawing.Size(70, 68);
             this.button_modifyExisting.TabIndex = 15;
             this.button_modifyExisting.Text = "Modify Existing Item";
             this.button_modifyExisting.UseVisualStyleBackColor = true;
+            this.button_modifyExisting.Click += new System.EventHandler(this.button_modifyExisting_Click);
             // 
             // button_amtTender
             // 
             this.button_amtTender.Location = new System.Drawing.Point(242, 1);
             this.button_amtTender.Name = "button_amtTender";
-            this.button_amtTender.Size = new System.Drawing.Size(112, 69);
+            this.button_amtTender.Size = new System.Drawing.Size(112, 68);
             this.button_amtTender.TabIndex = 17;
             this.button_amtTender.Text = "Amount Tender";
             this.button_amtTender.UseVisualStyleBackColor = true;

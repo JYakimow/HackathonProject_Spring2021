@@ -30,12 +30,12 @@ namespace HackathonProject_Spring2021
 
         private void button_clockIn_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("You are now clocked in", "clock in");
         }
 
         private void button_clockOut_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("You are now clocked out", "clock out");
         }
 
         private void button_back_Click(object sender, EventArgs e)

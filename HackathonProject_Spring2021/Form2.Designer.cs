@@ -165,7 +165,7 @@ namespace HackathonProject_Spring2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 370);
+            this.ClientSize = new System.Drawing.Size(278, 350);
             this.Controls.Add(this.button_hReset);
             this.Controls.Add(this.button_reset);
             this.Controls.Add(this.button_hRefund);
