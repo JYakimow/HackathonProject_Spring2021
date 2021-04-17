@@ -31,7 +31,7 @@ namespace HackathonProject_Spring2021
         }
 
         //Entrees
-        
+
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
@@ -41,7 +41,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Deluxe Sandwitch
         private void button2_Click(object sender, EventArgs e)
         {
-            this.richTextBox_output.Text = "\n" + "1 Chick-fil-A Deluxe Sandwitch                                        $3.00";
+            this.richTextBox_output.Text = "\n" + "1 Chick-fil-A Deluxe Sandwich                                        $3.00";
         }
 
         //Spicy Chicken Sandwitch
@@ -86,46 +86,42 @@ namespace HackathonProject_Spring2021
             this.richTextBox_output.Text = "\n" + "1 Grilled Nuggets                                                             $3.00";
         }
 
-        
+
 
         private void button_qty1_Click(object sender, EventArgs e)
+        { 
+        }
+        private void button_mgr_Click(object sender, EventArgs e)
         {
-            display_new_form();
+            mgr_Form();
         }
 
-        public void display_new_form()
+        public void mgr_Form()
         {
-            Form2 testDialog = new Form2();
-
-            /*
-            // Show testDialog as a modal dialog and determine if DialogResult = OK.
-            if (testDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                // Read the contents of testDialog's TextBox.
-                //this.txtResult.Text = testDialog.TextBox1.Text;
-            }
-            else
-            {
-                //this.txtResult.Text = "Cancelled";
-            }
-            */
-            testDialog.Show();
-            //testDialog.Dispose();
+            ManagerMenu mgrMenu = new ManagerMenu();
+            mgrMenu.ShowDialog();            
         }
 
         private void button_testBurger_Click(object sender, EventArgs e)
         {
-            listBox1_items.Items.Add("item 1 \n line 2");
+            //Form_askEdit formAskEdit = new Form_askEdit();
+            //formAskEdit.Show();
         }
 
         private void button_qty2_Click(object sender, EventArgs e)
         {
-            listBox1_items.Items.Add("item 2 \n line 3");
         }
 
         private void listBox1_items_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_testBurger_Click_1(object sender, EventArgs e)
+        {
+            //Form_askEdit formAskEdit = new Form_askEdit();
+            //formAskEdit.ShowDialog();
+            this.richTextBox_output.Text = "test burger";
         }
     }
 }
