@@ -31,7 +31,7 @@ namespace HackathonProject_Spring2021
         }
 
         //Entrees
-        
+
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
@@ -86,9 +86,11 @@ namespace HackathonProject_Spring2021
             this.richTextBox_output.Text = "\n" + "1 Grilled Nuggets                                                             $3.00";
         }
 
-        
+
 
         private void button_qty1_Click(object sender, EventArgs e)
+        { 
+        }
         private void button_mgr_Click(object sender, EventArgs e)
         {
             mgr_Form();
@@ -97,8 +99,7 @@ namespace HackathonProject_Spring2021
         public void mgr_Form()
         {
             ManagerMenu mgrMenu = new ManagerMenu();
-            mgrMenu.Show();
-            
+            mgrMenu.ShowDialog();            
         }
 
         private void button_testBurger_Click(object sender, EventArgs e)

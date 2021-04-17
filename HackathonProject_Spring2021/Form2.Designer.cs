@@ -42,7 +42,7 @@ namespace HackathonProject_Spring2021
             // 
             // button_refund
             // 
-            this.button_refund.Location = new System.Drawing.Point(56, 66);
+            this.button_refund.Location = new System.Drawing.Point(12, 11);
             this.button_refund.Name = "button_refund";
             this.button_refund.Size = new System.Drawing.Size(239, 45);
             this.button_refund.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace HackathonProject_Spring2021
             // 
             // button_receipt
             // 
-            this.button_receipt.Location = new System.Drawing.Point(56, 129);
+            this.button_receipt.Location = new System.Drawing.Point(12, 74);
             this.button_receipt.Name = "button_receipt";
             this.button_receipt.Size = new System.Drawing.Size(239, 45);
             this.button_receipt.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace HackathonProject_Spring2021
             // 
             // button_clockIn
             // 
-            this.button_clockIn.Location = new System.Drawing.Point(56, 197);
+            this.button_clockIn.Location = new System.Drawing.Point(12, 142);
             this.button_clockIn.Name = "button_clockIn";
             this.button_clockIn.Size = new System.Drawing.Size(239, 45);
             this.button_clockIn.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace HackathonProject_Spring2021
             // 
             // button_clockOut
             // 
-            this.button_clockOut.Location = new System.Drawing.Point(56, 264);
+            this.button_clockOut.Location = new System.Drawing.Point(12, 209);
             this.button_clockOut.Name = "button_clockOut";
             this.button_clockOut.Size = new System.Drawing.Size(239, 45);
             this.button_clockOut.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace HackathonProject_Spring2021
             this.button_hReceipt.BackColor = System.Drawing.Color.Transparent;
             this.button_hReceipt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_hReceipt.Image = global::HackathonProject_Spring2021.Properties.Resources.question1;
-            this.button_hReceipt.Location = new System.Drawing.Point(287, 155);
+            this.button_hReceipt.Location = new System.Drawing.Point(243, 100);
             this.button_hReceipt.Name = "button_hReceipt";
             this.button_hReceipt.Size = new System.Drawing.Size(27, 26);
             this.button_hReceipt.TabIndex = 5;
@@ -107,7 +107,7 @@ namespace HackathonProject_Spring2021
             this.button_hIn.BackColor = System.Drawing.Color.Transparent;
             this.button_hIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_hIn.Image = global::HackathonProject_Spring2021.Properties.Resources.question1;
-            this.button_hIn.Location = new System.Drawing.Point(287, 226);
+            this.button_hIn.Location = new System.Drawing.Point(243, 171);
             this.button_hIn.Name = "button_hIn";
             this.button_hIn.Size = new System.Drawing.Size(27, 26);
             this.button_hIn.TabIndex = 6;
@@ -119,7 +119,7 @@ namespace HackathonProject_Spring2021
             this.button_hOut.BackColor = System.Drawing.Color.Transparent;
             this.button_hOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_hOut.Image = global::HackathonProject_Spring2021.Properties.Resources.question1;
-            this.button_hOut.Location = new System.Drawing.Point(287, 293);
+            this.button_hOut.Location = new System.Drawing.Point(243, 238);
             this.button_hOut.Name = "button_hOut";
             this.button_hOut.Size = new System.Drawing.Size(27, 26);
             this.button_hOut.TabIndex = 7;
@@ -131,7 +131,7 @@ namespace HackathonProject_Spring2021
             this.button_hRefund.BackColor = System.Drawing.Color.Transparent;
             this.button_hRefund.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_hRefund.Image = global::HackathonProject_Spring2021.Properties.Resources.question1;
-            this.button_hRefund.Location = new System.Drawing.Point(287, 97);
+            this.button_hRefund.Location = new System.Drawing.Point(243, 42);
             this.button_hRefund.Name = "button_hRefund";
             this.button_hRefund.Size = new System.Drawing.Size(27, 26);
             this.button_hRefund.TabIndex = 8;
@@ -142,7 +142,7 @@ namespace HackathonProject_Spring2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 461);
+            this.ClientSize = new System.Drawing.Size(278, 276);
             this.Controls.Add(this.button_hRefund);
             this.Controls.Add(this.button_hOut);
             this.Controls.Add(this.button_hIn);
@@ -153,10 +153,7 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.button_receipt);
             this.Controls.Add(this.button_refund);
             this.Name = "ManagerMenu";
-            this.Text = "Manager Menu";
-            this.ClientSize = new System.Drawing.Size(303, 268);
-            this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.ResumeLayout(false);
 
