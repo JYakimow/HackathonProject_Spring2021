@@ -14,9 +14,9 @@ namespace HackathonProject_Spring2021
     public partial class Form1 : Form
     {
         int quanitity = 1;
-        double total = 0;
-        double Amount = 0;
-        double tempPrice = 0;
+        float total = 0;
+        float Amount = 0;
+        float tempPrice = 0;
 
         String OrderBox = "";
         public Form1()
@@ -40,19 +40,19 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwitch-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwitch - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Chick-fil-A Deluxe Sandwitch
         private void button2_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -61,8 +61,8 @@ namespace HackathonProject_Spring2021
         //Spicy Chicken Sandwitch
         private void button3_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Spicy Chicken Sandwitch-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -71,8 +71,8 @@ namespace HackathonProject_Spring2021
         //Spicy Deluxe Sandwitch
         private void button4_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Spicy Deluxe Sandwitch-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -81,8 +81,8 @@ namespace HackathonProject_Spring2021
         //Grilled Chicken Sandwitch
         private void button5_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Grilled Chicken Sandwitch-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -91,18 +91,18 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Grilled Chicken Club Sandwitch
         private void button6_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwitch-" + tempPrice;
+            this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwitch - " + "$" + tempPrice;
             this.total_label.Text = "Total: " + total;
         }
 
         //Grilled Spicy Deluxe
         private void button7_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Grilled Spicy Deluxe-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -111,8 +111,8 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Nuggets
         private void button8_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick-fil-A Nuggets-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -121,8 +121,8 @@ namespace HackathonProject_Spring2021
         //Grilled Nuggets
         private void button9_Click(object sender, EventArgs e)
         {
-            Amount = 3.00;
-            tempPrice = quanitity * 3.00;
+            Amount = 3;
+            tempPrice = quanitity * 3;
             total = total + tempPrice;
             this.richTextBox_output.Text = "\n" + " " + quanitity + " Grilled Nuggets-" + tempPrice;
             this.total_label.Text = "Total: " + total;
@@ -204,14 +204,14 @@ namespace HackathonProject_Spring2021
             quanitity = 8;
         }
 
-        private void button_qtyCustom_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void total_label_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button_qtyCustom_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
