@@ -43,7 +43,7 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwitch-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich-" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
@@ -54,7 +54,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -64,7 +65,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Spicy Chicken Sandwitch-" + tempPrice;
+            OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Chicken Sandwich-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -74,7 +76,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Spicy Deluxe Sandwitch-" + tempPrice;
+            OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Deluxe Sandwich-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -84,7 +87,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Grilled Chicken Sandwitch-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Chicken Sandwich-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -94,7 +98,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwitch-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwich-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -104,7 +109,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Grilled Spicy Deluxe-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Spicy Deluxe-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -114,7 +120,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Chick-fil-A Nuggets-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Nuggets-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 
@@ -124,7 +131,8 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            this.richTextBox_output.Text = "\n" + " " + quanitity + " Grilled Nuggets-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Nuggets-" + tempPrice;
+            this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: " + total;
         }
 

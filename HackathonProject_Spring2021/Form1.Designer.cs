@@ -185,14 +185,7 @@ namespace HackathonProject_Spring2021
             this.button_qty8.Click += new System.EventHandler(this.button_qty8_Click);
             // 
             // button_qtyCustom
-            // 
-            this.button_qtyCustom.Location = new System.Drawing.Point(315, 466);
-            this.button_qtyCustom.Name = "button_qtyCustom";
-            this.button_qtyCustom.Size = new System.Drawing.Size(39, 32);
-            this.button_qtyCustom.TabIndex = 12;
-            this.button_qtyCustom.Text = "< 8";
-            this.button_qtyCustom.UseVisualStyleBackColor = true;
-            this.button_qtyCustom.Click += new System.EventHandler(this.button_qtyCustom_Click);
+            //
             // 
             // total_label
             // 
