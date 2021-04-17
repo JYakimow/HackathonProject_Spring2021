@@ -107,6 +107,7 @@ namespace HackathonProject_Spring2021
             this.button_qty1.TabIndex = 4;
             this.button_qty1.Text = "1";
             this.button_qty1.UseVisualStyleBackColor = true;
+            this.button_qty1.Click += new System.EventHandler(this.button_qty1_Click);
             // 
             // button_qty2
             // 
