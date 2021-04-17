@@ -21,16 +21,6 @@ namespace HackathonProject_Spring2021
 
         }
     }
-    public class ingredient
-    {
-        String[] ingredients = { "" };
-        int count = 0;
-        static void addIngredient(string i)
-        {
-            ingredient newingredient = new ingredient();
-            ingredients[count] = newingredient;
-        }
-    }
 
 
 }

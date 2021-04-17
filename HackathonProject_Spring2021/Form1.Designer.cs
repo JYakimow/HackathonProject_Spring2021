@@ -113,6 +113,7 @@ namespace HackathonProject_Spring2021
             this.button_qty1.TabIndex = 4;
             this.button_qty1.Text = "1";
             this.button_qty1.UseVisualStyleBackColor = true;
+            this.button_qty1.Click += new System.EventHandler(this.button_qty1_Click_1);
             // 
             // button_qty2
             // 
@@ -132,6 +133,7 @@ namespace HackathonProject_Spring2021
             this.button_qty3.TabIndex = 6;
             this.button_qty3.Text = "3";
             this.button_qty3.UseVisualStyleBackColor = true;
+            this.button_qty3.Click += new System.EventHandler(this.button_qty3_Click);
             // 
             // button_qty4
             // 
@@ -141,6 +143,7 @@ namespace HackathonProject_Spring2021
             this.button_qty4.TabIndex = 7;
             this.button_qty4.Text = "4";
             this.button_qty4.UseVisualStyleBackColor = true;
+            this.button_qty4.Click += new System.EventHandler(this.button_qty4_Click);
             // 
             // button_qty5
             // 
@@ -150,6 +153,7 @@ namespace HackathonProject_Spring2021
             this.button_qty5.TabIndex = 8;
             this.button_qty5.Text = "5";
             this.button_qty5.UseVisualStyleBackColor = true;
+            this.button_qty5.Click += new System.EventHandler(this.button_qty5_Click);
             // 
             // button_qty6
             // 
@@ -159,6 +163,7 @@ namespace HackathonProject_Spring2021
             this.button_qty6.TabIndex = 9;
             this.button_qty6.Text = "6";
             this.button_qty6.UseVisualStyleBackColor = true;
+            this.button_qty6.Click += new System.EventHandler(this.button_qty6_Click);
             // 
             // button_qty7
             // 
@@ -168,6 +173,7 @@ namespace HackathonProject_Spring2021
             this.button_qty7.TabIndex = 10;
             this.button_qty7.Text = "7";
             this.button_qty7.UseVisualStyleBackColor = true;
+            this.button_qty7.Click += new System.EventHandler(this.button_qty7_Click);
             // 
             // button_qty8
             // 
@@ -177,6 +183,7 @@ namespace HackathonProject_Spring2021
             this.button_qty8.TabIndex = 11;
             this.button_qty8.Text = "8";
             this.button_qty8.UseVisualStyleBackColor = true;
+            this.button_qty8.Click += new System.EventHandler(this.button_qty8_Click);
             // 
             // button_qtyCustom
             // 
@@ -186,6 +193,7 @@ namespace HackathonProject_Spring2021
             this.button_qtyCustom.TabIndex = 12;
             this.button_qtyCustom.Text = "< 8";
             this.button_qtyCustom.UseVisualStyleBackColor = true;
+            this.button_qtyCustom.Click += new System.EventHandler(this.button_qtyCustom_Click);
             // 
             // total_label
             // 
@@ -196,6 +204,7 @@ namespace HackathonProject_Spring2021
             this.total_label.TabIndex = 13;
             this.total_label.Text = "Total: ";
             this.total_label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.total_label.Click += new System.EventHandler(this.total_label_Click);
             // 
             // tabControl1
             // 
