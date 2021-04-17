@@ -132,6 +132,11 @@ namespace HackathonProject_Spring2021
         {
             //made to keep original balance of the bill
         }
+
+        private void AmountTender_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

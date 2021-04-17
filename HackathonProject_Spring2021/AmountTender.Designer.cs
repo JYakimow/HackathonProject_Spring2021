@@ -354,6 +354,7 @@ namespace HackathonProject_Spring2021
             this.Name = "AmountTender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AmountTender";
+            this.Load += new System.EventHandler(this.AmountTender_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

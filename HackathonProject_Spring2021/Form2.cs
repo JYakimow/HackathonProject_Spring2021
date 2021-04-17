@@ -13,8 +13,10 @@ namespace HackathonProject_Spring2021
 {
     public partial class ManagerMenu : Form
     {
-        public ManagerMenu()
+        String Order;
+        public ManagerMenu(String Order)
         {
+            this.Order = Order;
             InitializeComponent();
         }
 
@@ -25,7 +27,8 @@ namespace HackathonProject_Spring2021
 
         private void button_receipt_Click(object sender, EventArgs e)
         {
-
+            DateTime now = DateTime.Now;
+            MessageBox.Show(now + "\n" + Order, "Recipt");
         }
 
         private void button_clockIn_Click(object sender, EventArgs e)

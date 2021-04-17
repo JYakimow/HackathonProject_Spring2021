@@ -375,7 +375,7 @@ namespace HackathonProject_Spring2021
 
         public void mgr_Form()
         {
-            ManagerMenu mgrMenu = new ManagerMenu();
+            ManagerMenu mgrMenu = new ManagerMenu(OrderBox);
             mgrMenu.ShowDialog();
         }
 
