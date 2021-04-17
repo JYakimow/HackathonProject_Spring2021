@@ -154,6 +154,10 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.button_refund);
             this.Name = "ManagerMenu";
             this.Text = "Manager Menu";
+            this.ClientSize = new System.Drawing.Size(303, 268);
+            this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
