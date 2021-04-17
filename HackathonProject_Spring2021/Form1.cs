@@ -112,5 +112,20 @@ namespace HackathonProject_Spring2021
             testDialog.Show();
             //testDialog.Dispose();
         }
+
+        private void button_testBurger_Click(object sender, EventArgs e)
+        {
+            listBox1_items.Items.Add("item 1 \n line 2");
+        }
+
+        private void button_qty2_Click(object sender, EventArgs e)
+        {
+            listBox1_items.Items.Add("item 2 \n line 3");
+        }
+
+        private void listBox1_items_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
