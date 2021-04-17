@@ -41,7 +41,6 @@ namespace HackathonProject_Spring2021
             this.button_qty6 = new System.Windows.Forms.Button();
             this.button_qty7 = new System.Windows.Forms.Button();
             this.button_qty8 = new System.Windows.Forms.Button();
-            this.button_qtyCustom = new System.Windows.Forms.Button();
             this.total_label = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -415,7 +414,6 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
-            this.Controls.Add(this.button_qtyCustom);
             this.Controls.Add(this.button_qty8);
             this.Controls.Add(this.button_qty7);
             this.Controls.Add(this.button_qty6);
@@ -454,7 +452,6 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_qty6;
         private System.Windows.Forms.Button button_qty7;
         private System.Windows.Forms.Button button_qty8;
-        private System.Windows.Forms.Button button_qtyCustom;
         private System.Windows.Forms.Label total_label;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
