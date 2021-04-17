@@ -40,7 +40,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich - $" + tempPrice;
@@ -51,7 +51,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Deluxe Sandwitch
         private void button2_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich - $" + tempPrice;
@@ -62,7 +62,7 @@ namespace HackathonProject_Spring2021
         //Spicy Chicken Sandwitch
         private void button3_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Chicken Sandwich - $" + tempPrice;
@@ -73,7 +73,7 @@ namespace HackathonProject_Spring2021
         //Spicy Deluxe Sandwitch
         private void button4_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Deluxe Sandwich - $" + tempPrice;
@@ -84,7 +84,7 @@ namespace HackathonProject_Spring2021
         //Grilled Chicken Sandwitch
         private void button5_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Chicken Sandwich - $" + tempPrice;
@@ -95,7 +95,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Grilled Chicken Club Sandwitch
         private void button6_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwich - $" + tempPrice;
@@ -106,7 +106,7 @@ namespace HackathonProject_Spring2021
         //Grilled Spicy Deluxe
         private void button7_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Spicy Deluxe - $" + tempPrice;
@@ -117,7 +117,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Nuggets
         private void button8_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Nuggets - $" + tempPrice;
@@ -128,7 +128,7 @@ namespace HackathonProject_Spring2021
         //Grilled Nuggets
         private void button9_Click(object sender, EventArgs e)
         {
-            Amount = 3;
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Nuggets - $" + tempPrice;
@@ -141,7 +141,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Waffle Potato Fries
         private void button19_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Waffle Potato Fries - $" + tempPrice;
@@ -152,7 +152,7 @@ namespace HackathonProject_Spring2021
         //Fruit Cup
         private void button20_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Fruit Cup - $" + tempPrice;
@@ -163,7 +163,7 @@ namespace HackathonProject_Spring2021
         //Side Salad
         private void button21_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Side Salad - $" + tempPrice;
@@ -174,7 +174,7 @@ namespace HackathonProject_Spring2021
         //Mac and Cheese
         private void button22_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Mac and Cheese - $" + tempPrice;
@@ -185,7 +185,7 @@ namespace HackathonProject_Spring2021
         //Chicken Noodle Soup
         private void button23_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chicken Noodle Soup - $" + tempPrice;
@@ -196,7 +196,7 @@ namespace HackathonProject_Spring2021
         //Chicken Tortilla Soup
         private void button24_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chicken Tortilla Soup - $" + tempPrice;
@@ -207,7 +207,7 @@ namespace HackathonProject_Spring2021
         //Kale Crunch Side
         private void button25_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Kale Crunch Side - $" + tempPrice;
@@ -218,7 +218,7 @@ namespace HackathonProject_Spring2021
         //Greek Yogurt Parfait
         private void button26_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Greek Yogurt Parfait - $" + tempPrice;
@@ -229,7 +229,7 @@ namespace HackathonProject_Spring2021
         //Waffle Potato Chips
         private void button27_Click(object sender, EventArgs e)
         {
-            Amount = 1;
+            Amount = 1.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Waffle Potato Chips - $" + tempPrice;

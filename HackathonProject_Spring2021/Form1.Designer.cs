@@ -100,6 +100,7 @@ namespace HackathonProject_Spring2021
             // 
             this.richTextBox_output.Location = new System.Drawing.Point(360, 3);
             this.richTextBox_output.Name = "richTextBox_output";
+            this.richTextBox_output.ReadOnly = true;
             this.richTextBox_output.Size = new System.Drawing.Size(301, 500);
             this.richTextBox_output.TabIndex = 1;
             this.richTextBox_output.Text = "";
