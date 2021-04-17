@@ -104,6 +104,8 @@ namespace HackathonProject_Spring2021
 
         private void button_testBurger_Click(object sender, EventArgs e)
         {
+            //Form_askEdit formAskEdit = new Form_askEdit();
+            //formAskEdit.Show();
         }
 
         private void button_qty2_Click(object sender, EventArgs e)
@@ -113,6 +115,13 @@ namespace HackathonProject_Spring2021
         private void listBox1_items_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_testBurger_Click_1(object sender, EventArgs e)
+        {
+            //Form_askEdit formAskEdit = new Form_askEdit();
+            //formAskEdit.ShowDialog();
+            this.richTextBox_output.Text = "test burger";
         }
     }
 }

@@ -58,10 +58,10 @@ namespace HackathonProject_Spring2021
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button_mediumDrink = new System.Windows.Forms.Button();
-            this.button_smallDrink = new System.Windows.Forms.Button();
             this.button_largeDrink = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.button_smallDrink = new System.Windows.Forms.Button();
+            this.button_mediumDrink = new System.Windows.Forms.Button();
+            this.button_modifyExisting = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -113,7 +113,6 @@ namespace HackathonProject_Spring2021
             this.button_qty1.TabIndex = 4;
             this.button_qty1.Text = "1";
             this.button_qty1.UseVisualStyleBackColor = true;
-            
             // 
             // button_qty2
             // 
@@ -229,6 +228,7 @@ namespace HackathonProject_Spring2021
             this.button_testBurger.TabIndex = 0;
             this.button_testBurger.Text = "test burger";
             this.button_testBurger.UseVisualStyleBackColor = true;
+            this.button_testBurger.Click += new System.EventHandler(this.button_testBurger_Click_1);
             // 
             // tabPage2
             // 
@@ -362,14 +362,14 @@ namespace HackathonProject_Spring2021
             this.tabPage4.Text = "Drinks";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button_mediumDrink
+            // button_largeDrink
             // 
-            this.button_mediumDrink.Location = new System.Drawing.Point(105, 6);
-            this.button_mediumDrink.Name = "button_mediumDrink";
-            this.button_mediumDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_mediumDrink.TabIndex = 1;
-            this.button_mediumDrink.Text = "Medium";
-            this.button_mediumDrink.UseVisualStyleBackColor = true;
+            this.button_largeDrink.Location = new System.Drawing.Point(8, 6);
+            this.button_largeDrink.Name = "button_largeDrink";
+            this.button_largeDrink.Size = new System.Drawing.Size(92, 40);
+            this.button_largeDrink.TabIndex = 3;
+            this.button_largeDrink.Text = "Large";
+            this.button_largeDrink.UseVisualStyleBackColor = true;
             // 
             // button_smallDrink
             // 
@@ -380,31 +380,30 @@ namespace HackathonProject_Spring2021
             this.button_smallDrink.Text = "Small";
             this.button_smallDrink.UseVisualStyleBackColor = true;
             // 
-            // button_largeDrink
+            // button_mediumDrink
             // 
-            this.button_largeDrink.Location = new System.Drawing.Point(8, 6);
-            this.button_largeDrink.Name = "button_largeDrink";
-            this.button_largeDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_largeDrink.TabIndex = 3;
-            this.button_largeDrink.Text = "Large";
-            this.button_largeDrink.UseVisualStyleBackColor = true;
+            this.button_mediumDrink.Location = new System.Drawing.Point(105, 6);
+            this.button_mediumDrink.Name = "button_mediumDrink";
+            this.button_mediumDrink.Size = new System.Drawing.Size(92, 40);
+            this.button_mediumDrink.TabIndex = 1;
+            this.button_mediumDrink.Text = "Medium";
+            this.button_mediumDrink.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button_modifyExisting
             // 
-            this.button10.Location = new System.Drawing.Point(142, 1);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(70, 68);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Modify Existing Item";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button_modifyExisting.Location = new System.Drawing.Point(146, 1);
+            this.button_modifyExisting.Name = "button_modifyExisting";
+            this.button_modifyExisting.Size = new System.Drawing.Size(70, 68);
+            this.button_modifyExisting.TabIndex = 15;
+            this.button_modifyExisting.Text = "Modify Existing Item";
+            this.button_modifyExisting.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 548);
             this.ClientSize = new System.Drawing.Size(666, 526);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
             this.Controls.Add(this.button_qtyCustom);
@@ -467,7 +466,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_largeDrink;
         private System.Windows.Forms.Button button_smallDrink;
         private System.Windows.Forms.Button button_mediumDrink;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button_modifyExisting;
     }
 }
 

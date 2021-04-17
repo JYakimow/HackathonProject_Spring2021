@@ -16,5 +16,15 @@ namespace HackathonProject_Spring2021
         {
             InitializeComponent();
         }
+
+        private void button_yes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_no_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

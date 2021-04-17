@@ -81,6 +81,9 @@
     <EmbeddedResource Include="Form_askEdit.resx">
       <DependentUpon>Form_askEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_editAnItem.resx">
+      <DependentUpon>Form_editAnItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
