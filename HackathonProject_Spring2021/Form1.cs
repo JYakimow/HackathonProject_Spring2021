@@ -264,12 +264,6 @@ namespace HackathonProject_Spring2021
 
         }
 
-        private void button_testBurger_Click_1(object sender, EventArgs e)
-        {
-            //Form_askEdit formAskEdit = new Form_askEdit();
-            //formAskEdit.ShowDialog();
-            this.richTextBox_output.Text = "test burger";
-        }
 
         //Amount Buttons
         private void button_qty1_Click_1(object sender, EventArgs e)
