@@ -14,9 +14,9 @@ namespace HackathonProject_Spring2021
     public partial class Form1 : Form
     {
         int quanitity = 1;
-        float total = 0;
-        float Amount = 0;
-        float tempPrice = 0;
+        double total = 0;
+        double Amount = 0;
+        double tempPrice = 0;
 
         String OrderBox = "";
         public Form1()
