@@ -14,9 +14,9 @@ namespace HackathonProject_Spring2021
     public partial class Form1 : Form
     {
         int quanitity = 1;
-        float total = 0;
-        float Amount = 0;
-        float tempPrice = 0;
+        double total = 0;
+        double Amount = 0;
+        double tempPrice = 0;
         string OrderBox = "";
         Ingredient[] ingredientArr;
 
@@ -32,10 +32,31 @@ namespace HackathonProject_Spring2021
         private void Form1_Load(object sender, EventArgs e)
         {
             //arrays here
-            ingredientArr = new Ingredient[10];
+            ingredientArr = new Ingredient[11];
             //fill ingredients
-            Ingredient bun = new Ingredient("bun", 0.30);
-            ingredientArr[0] = bun;
+            Ingredient Regular_bun = new Ingredient("Regular bun", 0.30);
+            ingredientArr[0] = Regular_bun;
+            Ingredient WholeWheat_bun = new Ingredient("Whole Wheat bun", 0.20);
+            ingredientArr[1] = WholeWheat_bun;
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            ingredientArr[2] = FriedChicken_Patty;
+            Ingredient GrilledChicken_Patty = new Ingredient("Grilled Chicken Patty", 0.40);
+            ingredientArr[3] = GrilledChicken_Patty;
+            Ingredient Pickles = new Ingredient("Pickles", 0.15);
+            ingredientArr[4] = Pickles;
+            Ingredient Chedder_Cheese = new Ingredient("Chedder Cheese", 0.30);
+            ingredientArr[5] = Chedder_Cheese;
+            Ingredient CobyJack_Cheese = new Ingredient("Coby Jack Cheese", 0.30);
+            ingredientArr[6] = CobyJack_Cheese;
+            Ingredient PepperJack_Cheese = new Ingredient("Pepper Jack Cheese", 0.30);
+            ingredientArr[7] = PepperJack_Cheese;
+            Ingredient Bacon = new Ingredient("Bacon", 0.10);
+            ingredientArr[8] = Bacon;
+            Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
+            ingredientArr[9] = Tomatoes;
+            Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
+            ingredientArr[10] = Lettuce;
+
 
 
             //MessageBox.Show(test.name);
