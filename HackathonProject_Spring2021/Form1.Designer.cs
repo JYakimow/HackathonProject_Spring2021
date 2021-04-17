@@ -41,11 +41,18 @@ namespace HackathonProject_Spring2021
             this.button_qty6 = new System.Windows.Forms.Button();
             this.button_qty7 = new System.Windows.Forms.Button();
             this.button_qty8 = new System.Windows.Forms.Button();
-            this.button_qtyCustom = new System.Windows.Forms.Button();
             this.total_label = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button_testBurger = new System.Windows.Forms.Button();
+            this.button18_Combo3 = new System.Windows.Forms.Button();
+            this.button17_Combo9 = new System.Windows.Forms.Button();
+            this.button16_Combo8 = new System.Windows.Forms.Button();
+            this.button15_Combo7 = new System.Windows.Forms.Button();
+            this.button14_Combo6 = new System.Windows.Forms.Button();
+            this.button13_Combo5 = new System.Windows.Forms.Button();
+            this.button12_Combo4 = new System.Windows.Forms.Button();
+            this.button11_Combo2 = new System.Windows.Forms.Button();
+            this.button10_Combo1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -57,6 +64,15 @@ namespace HackathonProject_Spring2021
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button_largeDrink = new System.Windows.Forms.Button();
             this.button_smallDrink = new System.Windows.Forms.Button();
@@ -66,6 +82,7 @@ namespace HackathonProject_Spring2021
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +113,7 @@ namespace HackathonProject_Spring2021
             this.button_qty1.TabIndex = 4;
             this.button_qty1.Text = "1";
             this.button_qty1.UseVisualStyleBackColor = true;
+            this.button_qty1.Click += new System.EventHandler(this.button_qty1_Click_1);
             // 
             // button_qty2
             // 
@@ -115,6 +133,7 @@ namespace HackathonProject_Spring2021
             this.button_qty3.TabIndex = 6;
             this.button_qty3.Text = "3";
             this.button_qty3.UseVisualStyleBackColor = true;
+            this.button_qty3.Click += new System.EventHandler(this.button_qty3_Click);
             // 
             // button_qty4
             // 
@@ -124,6 +143,7 @@ namespace HackathonProject_Spring2021
             this.button_qty4.TabIndex = 7;
             this.button_qty4.Text = "4";
             this.button_qty4.UseVisualStyleBackColor = true;
+            this.button_qty4.Click += new System.EventHandler(this.button_qty4_Click);
             // 
             // button_qty5
             // 
@@ -133,6 +153,7 @@ namespace HackathonProject_Spring2021
             this.button_qty5.TabIndex = 8;
             this.button_qty5.Text = "5";
             this.button_qty5.UseVisualStyleBackColor = true;
+            this.button_qty5.Click += new System.EventHandler(this.button_qty5_Click);
             // 
             // button_qty6
             // 
@@ -142,6 +163,7 @@ namespace HackathonProject_Spring2021
             this.button_qty6.TabIndex = 9;
             this.button_qty6.Text = "6";
             this.button_qty6.UseVisualStyleBackColor = true;
+            this.button_qty6.Click += new System.EventHandler(this.button_qty6_Click);
             // 
             // button_qty7
             // 
@@ -151,6 +173,7 @@ namespace HackathonProject_Spring2021
             this.button_qty7.TabIndex = 10;
             this.button_qty7.Text = "7";
             this.button_qty7.UseVisualStyleBackColor = true;
+            this.button_qty7.Click += new System.EventHandler(this.button_qty7_Click);
             // 
             // button_qty8
             // 
@@ -160,15 +183,7 @@ namespace HackathonProject_Spring2021
             this.button_qty8.TabIndex = 11;
             this.button_qty8.Text = "8";
             this.button_qty8.UseVisualStyleBackColor = true;
-            // 
-            // button_qtyCustom
-            // 
-            this.button_qtyCustom.Location = new System.Drawing.Point(315, 466);
-            this.button_qtyCustom.Name = "button_qtyCustom";
-            this.button_qtyCustom.Size = new System.Drawing.Size(39, 32);
-            this.button_qtyCustom.TabIndex = 12;
-            this.button_qtyCustom.Text = "< 8";
-            this.button_qtyCustom.UseVisualStyleBackColor = true;
+            this.button_qty8.Click += new System.EventHandler(this.button_qty8_Click);
             // 
             // total_label
             // 
@@ -179,6 +194,7 @@ namespace HackathonProject_Spring2021
             this.total_label.TabIndex = 13;
             this.total_label.Text = "Total: ";
             this.total_label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.total_label.Click += new System.EventHandler(this.total_label_Click);
             // 
             // tabControl1
             // 
@@ -194,7 +210,15 @@ namespace HackathonProject_Spring2021
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button_testBurger);
+            this.tabPage1.Controls.Add(this.button18_Combo3);
+            this.tabPage1.Controls.Add(this.button17_Combo9);
+            this.tabPage1.Controls.Add(this.button16_Combo8);
+            this.tabPage1.Controls.Add(this.button15_Combo7);
+            this.tabPage1.Controls.Add(this.button14_Combo6);
+            this.tabPage1.Controls.Add(this.button13_Combo5);
+            this.tabPage1.Controls.Add(this.button12_Combo4);
+            this.tabPage1.Controls.Add(this.button11_Combo2);
+            this.tabPage1.Controls.Add(this.button10_Combo1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -203,15 +227,86 @@ namespace HackathonProject_Spring2021
             this.tabPage1.Text = "Combos";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button_testBurger
+            // button18_Combo3
             // 
-            this.button_testBurger.Location = new System.Drawing.Point(9, 4);
-            this.button_testBurger.Name = "button_testBurger";
-            this.button_testBurger.Size = new System.Drawing.Size(57, 55);
-            this.button_testBurger.TabIndex = 0;
-            this.button_testBurger.Text = "test burger";
-            this.button_testBurger.UseVisualStyleBackColor = true;
-            this.button_testBurger.Click += new System.EventHandler(this.button_testBurger_Click_1);
+            this.button18_Combo3.Location = new System.Drawing.Point(171, 6);
+            this.button18_Combo3.Name = "button18_Combo3";
+            this.button18_Combo3.Size = new System.Drawing.Size(75, 60);
+            this.button18_Combo3.TabIndex = 9;
+            this.button18_Combo3.Text = "Combo 3";
+            this.button18_Combo3.UseVisualStyleBackColor = true;
+            // 
+            // button17_Combo9
+            // 
+            this.button17_Combo9.Location = new System.Drawing.Point(171, 139);
+            this.button17_Combo9.Name = "button17_Combo9";
+            this.button17_Combo9.Size = new System.Drawing.Size(75, 61);
+            this.button17_Combo9.TabIndex = 8;
+            this.button17_Combo9.Text = "Combo 9";
+            this.button17_Combo9.UseVisualStyleBackColor = true;
+            // 
+            // button16_Combo8
+            // 
+            this.button16_Combo8.Location = new System.Drawing.Point(90, 139);
+            this.button16_Combo8.Name = "button16_Combo8";
+            this.button16_Combo8.Size = new System.Drawing.Size(75, 61);
+            this.button16_Combo8.TabIndex = 7;
+            this.button16_Combo8.Text = "Combo 8";
+            this.button16_Combo8.UseVisualStyleBackColor = true;
+            // 
+            // button15_Combo7
+            // 
+            this.button15_Combo7.Location = new System.Drawing.Point(9, 139);
+            this.button15_Combo7.Name = "button15_Combo7";
+            this.button15_Combo7.Size = new System.Drawing.Size(75, 61);
+            this.button15_Combo7.TabIndex = 6;
+            this.button15_Combo7.Text = "Combo 7";
+            this.button15_Combo7.UseVisualStyleBackColor = true;
+            // 
+            // button14_Combo6
+            // 
+            this.button14_Combo6.Location = new System.Drawing.Point(171, 72);
+            this.button14_Combo6.Name = "button14_Combo6";
+            this.button14_Combo6.Size = new System.Drawing.Size(75, 61);
+            this.button14_Combo6.TabIndex = 5;
+            this.button14_Combo6.Text = "Combo 6";
+            this.button14_Combo6.UseVisualStyleBackColor = true;
+            // 
+            // button13_Combo5
+            // 
+            this.button13_Combo5.Location = new System.Drawing.Point(90, 72);
+            this.button13_Combo5.Name = "button13_Combo5";
+            this.button13_Combo5.Size = new System.Drawing.Size(75, 61);
+            this.button13_Combo5.TabIndex = 4;
+            this.button13_Combo5.Text = "Combo 5";
+            this.button13_Combo5.UseVisualStyleBackColor = true;
+            // 
+            // button12_Combo4
+            // 
+            this.button12_Combo4.Location = new System.Drawing.Point(9, 72);
+            this.button12_Combo4.Name = "button12_Combo4";
+            this.button12_Combo4.Size = new System.Drawing.Size(75, 61);
+            this.button12_Combo4.TabIndex = 3;
+            this.button12_Combo4.Text = "Combo 4";
+            this.button12_Combo4.UseVisualStyleBackColor = true;
+            // 
+            // button11_Combo2
+            // 
+            this.button11_Combo2.Location = new System.Drawing.Point(90, 6);
+            this.button11_Combo2.Name = "button11_Combo2";
+            this.button11_Combo2.Size = new System.Drawing.Size(75, 60);
+            this.button11_Combo2.TabIndex = 2;
+            this.button11_Combo2.Text = "Combo 2";
+            this.button11_Combo2.UseVisualStyleBackColor = true;
+            // 
+            // button10_Combo1
+            // 
+            this.button10_Combo1.Location = new System.Drawing.Point(9, 6);
+            this.button10_Combo1.Name = "button10_Combo1";
+            this.button10_Combo1.Size = new System.Drawing.Size(75, 60);
+            this.button10_Combo1.TabIndex = 1;
+            this.button10_Combo1.Text = "Combo 1";
+            this.button10_Combo1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -324,6 +419,15 @@ namespace HackathonProject_Spring2021
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button27);
+            this.tabPage3.Controls.Add(this.button26);
+            this.tabPage3.Controls.Add(this.button25);
+            this.tabPage3.Controls.Add(this.button24);
+            this.tabPage3.Controls.Add(this.button23);
+            this.tabPage3.Controls.Add(this.button22);
+            this.tabPage3.Controls.Add(this.button21);
+            this.tabPage3.Controls.Add(this.button20);
+            this.tabPage3.Controls.Add(this.button19);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -331,6 +435,96 @@ namespace HackathonProject_Spring2021
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Sides";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(165, 132);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(75, 58);
+            this.button27.TabIndex = 8;
+            this.button27.Text = "Waffle Potato Chips";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(84, 132);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 58);
+            this.button26.TabIndex = 7;
+            this.button26.Text = "Greek Yogurt Parfait";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(3, 132);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 58);
+            this.button25.TabIndex = 6;
+            this.button25.Text = "Kale Crunch Side";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(165, 67);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 59);
+            this.button24.TabIndex = 5;
+            this.button24.Text = "Chicken Tortilla Soup";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(84, 67);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 59);
+            this.button23.TabIndex = 4;
+            this.button23.Text = "Chicken Noodle Soup";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(3, 67);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 59);
+            this.button22.TabIndex = 3;
+            this.button22.Text = "Mac and Cheese";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(165, 3);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 58);
+            this.button21.TabIndex = 2;
+            this.button21.Text = "Side Salad";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(84, 3);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 58);
+            this.button20.TabIndex = 1;
+            this.button20.Text = "Fruit Cup";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(3, 3);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 58);
+            this.button19.TabIndex = 0;
+            this.button19.Text = "Chick-fil-A Waffle Potato Fies";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // tabPage4
             // 
@@ -353,6 +547,7 @@ namespace HackathonProject_Spring2021
             this.button_largeDrink.TabIndex = 3;
             this.button_largeDrink.Text = "Large";
             this.button_largeDrink.UseVisualStyleBackColor = true;
+            this.button_largeDrink.Click += new System.EventHandler(this.button_largeDrink_Click);
             // 
             // button_smallDrink
             // 
@@ -397,10 +592,10 @@ namespace HackathonProject_Spring2021
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 526);
             this.Controls.Add(this.button_amtTender);
+            this.Controls.Add(this.button_qtyCustom);
             this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
-            this.Controls.Add(this.button_qtyCustom);
             this.Controls.Add(this.button_qty8);
             this.Controls.Add(this.button_qty7);
             this.Controls.Add(this.button_qty6);
@@ -418,6 +613,7 @@ namespace HackathonProject_Spring2021
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -438,7 +634,6 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_qty6;
         private System.Windows.Forms.Button button_qty7;
         private System.Windows.Forms.Button button_qty8;
-        private System.Windows.Forms.Button button_qtyCustom;
         private System.Windows.Forms.Label total_label;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -446,6 +641,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button_testBurger;
+        private System.Windows.Forms.Button button_toGo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -460,6 +656,24 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_mediumDrink;
         private System.Windows.Forms.Button button_modifyExisting;
         private System.Windows.Forms.Button button_amtTender;
+        private System.Windows.Forms.Button button14_Combo6;
+        private System.Windows.Forms.Button button13_Combo5;
+        private System.Windows.Forms.Button button12_Combo4;
+        private System.Windows.Forms.Button button11_Combo2;
+        private System.Windows.Forms.Button button10_Combo1;
+        private System.Windows.Forms.Button button18_Combo3;
+        private System.Windows.Forms.Button button17_Combo9;
+        private System.Windows.Forms.Button button16_Combo8;
+        private System.Windows.Forms.Button button15_Combo7;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button19;
     }
 }
 
