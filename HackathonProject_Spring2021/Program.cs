@@ -19,6 +19,10 @@ namespace HackathonProject_Spring2021
             Application.Run(new Form1());
         }
     }
+    public static class ControlID
+    {
+        public static int theTotal { get; set; }
+    }
     public class Item
     {
         public double cost;

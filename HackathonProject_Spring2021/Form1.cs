@@ -18,6 +18,7 @@ namespace HackathonProject_Spring2021
         double Amount = 0;
         double tempPrice = 0;
         string OrderBox = "";
+        public static double aTotal;
         Ingredient[] ingredientArr;
 
         //MessageBox.Show("test");
@@ -72,35 +73,36 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
-            Ingredient[] Chick_fil_A_Chicken_Sandwich_Ingredients = new Ingredient[3];
+            Ingredient[] Chicken_Sandwich_Ingredients = new Ingredient[3];
             Ingredient Regular_Bun = new Ingredient("Regular Bun", 0.30);
             Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
             Ingredient Pickles = new Ingredient("Pickles", 0.15);
-            Chick_fil_A_Chicken_Sandwich_Ingredients[0] = Regular_Bun;
-            Chick_fil_A_Chicken_Sandwich_Ingredients[1] = FriedChicken_Patty;
-            Chick_fil_A_Chicken_Sandwich_Ingredients[2] = Pickles;
+            Chicken_Sandwich_Ingredients[0] = Regular_Bun;
+            Chicken_Sandwich_Ingredients[1] = FriedChicken_Patty;
+            Chicken_Sandwich_Ingredients[2] = Pickles;
 
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Chick-fil-A Deluxe Sandwitch
         private void button2_Click(object sender, EventArgs e)
         {
-            Ingredient[] Chick_fil_A_Deluxe_Sandwitch_Ingredients = new Ingredient[5];
+            Ingredient[] Deluxe_Sandwich_Ingredients = new Ingredient[5];
             Ingredient Regular_Bun = new Ingredient("Regular Bun", 0.30);
             Ingredient Chedder_Cheese = new Ingredient("Chedder Cheese", 0.30);
             Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
             Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
             Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
-            Chick_fil_A_Deluxe_Sandwitch_Ingredients[0] = Regular_Bun;
-            Chick_fil_A_Deluxe_Sandwitch_Ingredients[1] = Chedder_Cheese;
-            Chick_fil_A_Deluxe_Sandwitch_Ingredients[2] = FriedChicken_Patty;
-            Chick_fil_A_Deluxe_Sandwitch_Ingredients[3] = Tomatoes;
-            Chick_fil_A_Deluxe_Sandwitch_Ingredients[4] = Lettuce;
+            Deluxe_Sandwich_Ingredients[0] = Regular_Bun;
+            Deluxe_Sandwich_Ingredients[1] = Chedder_Cheese;
+            Deluxe_Sandwich_Ingredients[2] = FriedChicken_Patty;
+            Deluxe_Sandwich_Ingredients[3] = Tomatoes;
+            Deluxe_Sandwich_Ingredients[4] = Lettuce;
 
             Amount = 3.00;
             tempPrice = quanitity * Amount;
@@ -108,18 +110,19 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Spicy Chicken Sandwitch
         private void button3_Click(object sender, EventArgs e)
         {
-            Ingredient[] Spicy_Chicken_Sandwitch_Ingredients = new Ingredient[3];
+            Ingredient[] Spicy_Chicken_Sandwich_Ingredients = new Ingredient[3];
             Ingredient Regular_Bun = new Ingredient("Regular Bun", 0.30);
             Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
             Ingredient Pickles = new Ingredient("Pickles", 0.15);
-            Spicy_Chicken_Sandwitch_Ingredients[0] = Regular_Bun;
-            Spicy_Chicken_Sandwitch_Ingredients[1] = FriedChicken_Patty;
-            Spicy_Chicken_Sandwitch_Ingredients[2] = Pickles;
+            Spicy_Chicken_Sandwich_Ingredients[0] = Regular_Bun;
+            Spicy_Chicken_Sandwich_Ingredients[1] = FriedChicken_Patty;
+            Spicy_Chicken_Sandwich_Ingredients[2] = Pickles;
 
             Amount = 3.00;
             tempPrice = quanitity * Amount;
@@ -127,6 +130,7 @@ namespace HackathonProject_Spring2021
             OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Chicken Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Spicy Deluxe Sandwitch
@@ -152,20 +156,21 @@ namespace HackathonProject_Spring2021
             OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Deluxe Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Grilled Chicken Sandwitch
         private void button5_Click(object sender, EventArgs e)
         {
-            Ingredient[] Grilled_Chicken_Sandwitch_Ingredients = new Ingredient[4];
+            Ingredient[] Grilled_Chicken_Sandwich_Ingredients = new Ingredient[4];
             Ingredient Regular_Bun = new Ingredient("Regular_Bun", 0.30);
             Ingredient Grilled_Chicken_Patty = new Ingredient("Grilled Chicken Patty", 0.40);
             Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
             Ingredient Lettuce = new Ingredient("Pickles", 0.20);
-            Grilled_Chicken_Sandwitch_Ingredients[0] = Regular_Bun;
-            Grilled_Chicken_Sandwitch_Ingredients[1] = Grilled_Chicken_Patty;
-            Grilled_Chicken_Sandwitch_Ingredients[2] = Tomatoes;
-            Grilled_Chicken_Sandwitch_Ingredients[3] = Lettuce;
+            Grilled_Chicken_Sandwich_Ingredients[0] = Regular_Bun;
+            Grilled_Chicken_Sandwich_Ingredients[1] = Grilled_Chicken_Patty;
+            Grilled_Chicken_Sandwich_Ingredients[2] = Tomatoes;
+            Grilled_Chicken_Sandwich_Ingredients[3] = Lettuce;
 
             Amount = 3.00;
             tempPrice = quanitity * Amount;
@@ -173,24 +178,25 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Chicken Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Chick-fil-A Grilled Chicken Club Sandwitch
         private void button6_Click(object sender, EventArgs e)
         {
-            Ingredient[] Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients = new Ingredient[6];
+            Ingredient[] Grilled_Chicken_Club_Ingredients = new Ingredient[6];
             Ingredient Whole_Wheat_Bun = new Ingredient("Whole Wheat Bun", 0.20);
             Ingredient Bacon = new Ingredient("Bacon", 0.10);
             Ingredient Coby_Jack_Cheese = new Ingredient("Coby_Jack_Cheese", 0.30);
             Ingredient Grilled_Chicken_Patty = new Ingredient("Grilled Chicken Patty", 0.40);
             Ingredient Tomatoes = new Ingredient("Tomatoes", 0.20);
             Ingredient Lettuce = new Ingredient("Lettuce", 0.20);
-            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[0] = Whole_Wheat_Bun;
-            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[1] = Bacon;
-            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[2] = Coby_Jack_Cheese;
-            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[3] = Grilled_Chicken_Patty;
-            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[4] = Tomatoes;
-            Chick_fil_A_Grilled_Chicken_Club_Sandwich_Ingredients[5] = Lettuce;
+            Grilled_Chicken_Club_Ingredients[0] = Whole_Wheat_Bun;
+            Grilled_Chicken_Club_Ingredients[1] = Bacon;
+            Grilled_Chicken_Club_Ingredients[2] = Coby_Jack_Cheese;
+            Grilled_Chicken_Club_Ingredients[3] = Grilled_Chicken_Patty;
+            Grilled_Chicken_Club_Ingredients[4] = Tomatoes;
+            Grilled_Chicken_Club_Ingredients[5] = Lettuce;
 
             Amount = 3.00;
             tempPrice = quanitity * Amount;
@@ -198,6 +204,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Grilled Spicy Deluxe
@@ -221,6 +228,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Spicy Deluxe - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Chick-fil-A Nuggets
@@ -232,6 +240,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Nuggets - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Grilled Nuggets
@@ -243,6 +252,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Nuggets - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Sides
@@ -256,6 +266,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Waffle Potato Fries - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Fruit Cup
@@ -267,6 +278,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Fruit Cup - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Side Salad
@@ -278,6 +290,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Side Salad - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Mac and Cheese
@@ -289,6 +302,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Mac and Cheese - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Chicken Noodle Soup
@@ -300,6 +314,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chicken Noodle Soup - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Chicken Tortilla Soup
@@ -311,6 +326,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chicken Tortilla Soup - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Kale Crunch Side
@@ -322,6 +338,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Kale Crunch Side - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Greek Yogurt Parfait
@@ -333,6 +350,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Greek Yogurt Parfait - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         //Waffle Potato Chips
@@ -344,6 +362,7 @@ namespace HackathonProject_Spring2021
             OrderBox = OrderBox + "\n" + " " + quanitity + " Waffle Potato Chips - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
             this.total_label.Text = "Total: $" + total;
+            aTotal = total;
         }
 
         private void button_qty1_Click(object sender, EventArgs e)
@@ -431,13 +450,16 @@ namespace HackathonProject_Spring2021
         }
         private void button_amtTender_Click(object sender, EventArgs e)
         {
-            amt_Form();
-        }
+        amt_Form();
+    }
         public void amt_Form()
         {
-            AmountTender amtTender = new AmountTender();
+            //int aNum = 0;
+            //public double theTotal = aTotal;
+            //public static double theTotal = aTotal;
+            AmountTender amtTender = new AmountTender(aTotal);
             amtTender.ShowDialog();
-        }
+    }
 
         private void button_modifyExisting_Click(object sender, EventArgs e)
         {

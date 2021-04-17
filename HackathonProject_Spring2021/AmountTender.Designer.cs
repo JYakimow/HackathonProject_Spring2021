@@ -352,6 +352,7 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.label_subtotal);
             this.Controls.Add(this.label_pay1);
             this.Name = "AmountTender";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AmountTender";
             this.ResumeLayout(false);
             this.PerformLayout();

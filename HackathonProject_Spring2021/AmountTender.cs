@@ -12,22 +12,27 @@ namespace HackathonProject_Spring2021
 {
     public partial class AmountTender : Form
     {
-        public AmountTender()
+        double theTotal;
+        public AmountTender(double theTotal)
         {
+            this.theTotal = theTotal;
             InitializeComponent();
+            MessageBox.Show(theTotal.ToString());
 
         }
         double input;
         double rt;
         double ft = 10;
-        
-    
 
-        
+
+
+
         private void AmountTender_Load(object sender, EventArgs e)
         {
             textBox_custom.Select();
             textBox_custom.Focus();
+            //public static int quantity;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -126,7 +131,7 @@ namespace HackathonProject_Spring2021
         private void button2_Click(object sender, EventArgs e)
         {
             //made to keep original balance of the bill
-
+        }
     }
-    }
+}
 

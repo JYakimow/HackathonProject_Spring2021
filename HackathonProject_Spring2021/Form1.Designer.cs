@@ -576,7 +576,6 @@ namespace HackathonProject_Spring2021
             this.button_modifyExisting.TabIndex = 15;
             this.button_modifyExisting.Text = "Modify Existing Item";
             this.button_modifyExisting.UseVisualStyleBackColor = true;
-            this.button_modifyExisting.Click += new System.EventHandler(this.button_modifyExisting_Click);
             // 
             // button_amtTender
             // 
