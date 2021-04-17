@@ -72,6 +72,11 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
+            Ingredient[] arr = new Ingredient[11];
+            Ingredient FriedChicken_Patty = new Ingredient("Fried Chicken Patty", 0.30);
+            Ingredient Pickles = new Ingredient("Pickles", 0.15);
+            arr[0] = FriedChicken_Patty;
+            arr[1] = Pickles;
 
             Amount = 3.00;
             tempPrice = quanitity * Amount;
