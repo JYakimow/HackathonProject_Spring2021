@@ -17,6 +17,8 @@ namespace HackathonProject_Spring2021
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+
         }
     }
 }
