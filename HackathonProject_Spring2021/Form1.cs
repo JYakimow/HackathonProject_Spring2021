@@ -13,10 +13,10 @@ namespace HackathonProject_Spring2021
 {
     public partial class Form1 : Form
     {
-        int quanitity = 1;
-        float total = 0;
-        float Amount = 0;
-        float tempPrice = 0;
+        double quanitity = 1;
+        double total = 0;
+        double Amount = 0;
+        double tempPrice = 0;
         string OrderBox = "";
         Ingredient[] ingredientArr;
 
@@ -51,6 +51,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Chicken Sandwitch
         private void button1_Click(object sender, EventArgs e)
         {
+
             Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
@@ -341,6 +342,11 @@ namespace HackathonProject_Spring2021
             amtTender.ShowDialog();
         }
 
+        private void button_modifyExisting_Click(object sender, EventArgs e)
+        {
+            Form_editAnItem aForm = new Form_editAnItem();
+            aForm.ShowDialog();
+        }
     }
 }     
 
