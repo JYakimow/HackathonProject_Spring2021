@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace HackathonProject_Spring2021
 {
     partial class Form1
@@ -31,8 +33,6 @@ namespace HackathonProject_Spring2021
         {
             this.button_mgr = new System.Windows.Forms.Button();
             this.richTextBox_output = new System.Windows.Forms.RichTextBox();
-            this.button_driveThrough = new System.Windows.Forms.Button();
-            this.button_toGo = new System.Windows.Forms.Button();
             this.button_qty1 = new System.Windows.Forms.Button();
             this.button_qty2 = new System.Windows.Forms.Button();
             this.button_qty3 = new System.Windows.Forms.Button();
@@ -78,6 +78,7 @@ namespace HackathonProject_Spring2021
             this.button_smallDrink = new System.Windows.Forms.Button();
             this.button_mediumDrink = new System.Windows.Forms.Button();
             this.button_modifyExisting = new System.Windows.Forms.Button();
+            this.button_amtTender = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -103,24 +104,6 @@ namespace HackathonProject_Spring2021
             this.richTextBox_output.TabIndex = 1;
             this.richTextBox_output.Text = "";
             this.richTextBox_output.TextChanged += new System.EventHandler(this.richTextBox_output_TextChanged);
-            // 
-            // button_driveThrough
-            // 
-            this.button_driveThrough.Location = new System.Drawing.Point(284, 1);
-            this.button_driveThrough.Name = "button_driveThrough";
-            this.button_driveThrough.Size = new System.Drawing.Size(70, 68);
-            this.button_driveThrough.TabIndex = 2;
-            this.button_driveThrough.Text = "Drive Through ";
-            this.button_driveThrough.UseVisualStyleBackColor = true;
-            // 
-            // button_toGo
-            // 
-            this.button_toGo.Location = new System.Drawing.Point(215, 1);
-            this.button_toGo.Name = "button_toGo";
-            this.button_toGo.Size = new System.Drawing.Size(70, 68);
-            this.button_toGo.TabIndex = 3;
-            this.button_toGo.Text = "To Go";
-            this.button_toGo.UseVisualStyleBackColor = true;
             // 
             // button_qty1
             // 
@@ -586,12 +569,22 @@ namespace HackathonProject_Spring2021
             // 
             // button_modifyExisting
             // 
-            this.button_modifyExisting.Location = new System.Drawing.Point(146, 1);
+            this.button_modifyExisting.Location = new System.Drawing.Point(183, 1);
             this.button_modifyExisting.Name = "button_modifyExisting";
             this.button_modifyExisting.Size = new System.Drawing.Size(70, 68);
             this.button_modifyExisting.TabIndex = 15;
             this.button_modifyExisting.Text = "Modify Existing Item";
             this.button_modifyExisting.UseVisualStyleBackColor = true;
+            // 
+            // button_amtTender
+            // 
+            this.button_amtTender.Location = new System.Drawing.Point(242, 1);
+            this.button_amtTender.Name = "button_amtTender";
+            this.button_amtTender.Size = new System.Drawing.Size(112, 69);
+            this.button_amtTender.TabIndex = 17;
+            this.button_amtTender.Text = "Amount Tender";
+            this.button_amtTender.UseVisualStyleBackColor = true;
+            this.button_amtTender.Click += new System.EventHandler(this.button_amtTender_Click);
             // 
             // Form1
             // 
@@ -609,8 +602,6 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.button_qty3);
             this.Controls.Add(this.button_qty2);
             this.Controls.Add(this.button_qty1);
-            this.Controls.Add(this.button_toGo);
-            this.Controls.Add(this.button_driveThrough);
             this.Controls.Add(this.richTextBox_output);
             this.Controls.Add(this.button_mgr);
             this.Name = "Form1";
@@ -627,11 +618,12 @@ namespace HackathonProject_Spring2021
 
         }
 
+
+
         #endregion
 
         private System.Windows.Forms.Button button_mgr;
         private System.Windows.Forms.RichTextBox richTextBox_output;
-        private System.Windows.Forms.Button button_driveThrough;
         private System.Windows.Forms.Button button_qty1;
         private System.Windows.Forms.Button button_qty2;
         private System.Windows.Forms.Button button_qty3;
@@ -646,6 +638,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button_testBurger;
         private System.Windows.Forms.Button button_toGo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
@@ -660,6 +653,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_smallDrink;
         private System.Windows.Forms.Button button_mediumDrink;
         private System.Windows.Forms.Button button_modifyExisting;
+        private System.Windows.Forms.Button button_amtTender;
         private System.Windows.Forms.Button button14_Combo6;
         private System.Windows.Forms.Button button13_Combo5;
         private System.Windows.Forms.Button button12_Combo4;

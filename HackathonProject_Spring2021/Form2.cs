@@ -65,5 +65,11 @@ namespace HackathonProject_Spring2021
             MessageBox.Show("Notice: " + Environment.NewLine + Environment.NewLine + "Used for employees to clock out." + Environment.NewLine +
                 "Enter in employee id and password.");
         }
+
+        private void button_hReset_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Notice: " + Environment.NewLine + Environment.NewLine + "Reset the running total and list of orders." + Environment.NewLine +
+                "Enter in employee id and password.");
+        }
     }
 }
