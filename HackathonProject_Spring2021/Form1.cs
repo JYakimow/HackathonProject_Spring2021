@@ -89,29 +89,16 @@ namespace HackathonProject_Spring2021
         
 
         private void button_qty1_Click(object sender, EventArgs e)
+        private void button_mgr_Click(object sender, EventArgs e)
         {
-            Form_askEdit form3 = new Form_askEdit();
-            form3.ShowDialog();
+            mgr_Form();
         }
 
-        public void display_new_form()
+        public void mgr_Form()
         {
-            Form2 testDialog = new Form2();
-
-            /*
-            // Show testDialog as a modal dialog and determine if DialogResult = OK.
-            if (testDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                // Read the contents of testDialog's TextBox.
-                //this.txtResult.Text = testDialog.TextBox1.Text;
-            }
-            else
-            {
-                //this.txtResult.Text = "Cancelled";
-            }
-            */
-            testDialog.Show();
-            //testDialog.Dispose();
+            ManagerMenu mgrMenu = new ManagerMenu();
+            mgrMenu.Show();
+            
         }
 
         private void button_testBurger_Click(object sender, EventArgs e)
