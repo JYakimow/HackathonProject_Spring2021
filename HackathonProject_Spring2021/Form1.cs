@@ -77,8 +77,10 @@ namespace HackathonProject_Spring2021
             Ingredient Pickles = new Ingredient("Pickles", 0.15);
             arr[0] = FriedChicken_Patty;
             arr[1] = Pickles;
-
             Amount = 3.00;
+
+            Item chicken_sandwich = new Item(Amount, "Chicken Sandwich", arr);
+
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich - $" + tempPrice;

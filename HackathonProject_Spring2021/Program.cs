@@ -21,11 +21,11 @@ namespace HackathonProject_Spring2021
     }
     public class Item
     {
-        public int cost;
+        public double cost;
         public string name;
-        public string[] ingredients;
+        public Ingredient[] ingredients;
 
-        public Item(int cost, string name, string[] ingredients)
+        public Item(double cost, string name, Ingredient[] ingredients)
         {
             this.cost = cost;
             this.name = name;

@@ -53,6 +53,12 @@
       <DependentUpon>AmountTender.cs</DependentUpon>
     </Compile>
     <Compile Include="CheckoutMenu.cs" />
+    <Compile Include="chooseToEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseToEdit.Designer.cs">
+      <DependentUpon>chooseToEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
