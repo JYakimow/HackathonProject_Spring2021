@@ -29,19 +29,19 @@ namespace HackathonProject_Spring2021
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.mngrMenu = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button_driveThrough = new System.Windows.Forms.Button();
+            this.button_toGo = new System.Windows.Forms.Button();
+            this.button_qty1 = new System.Windows.Forms.Button();
+            this.button_qty2 = new System.Windows.Forms.Button();
+            this.button_qty3 = new System.Windows.Forms.Button();
+            this.button_qty4 = new System.Windows.Forms.Button();
+            this.button_qty5 = new System.Windows.Forms.Button();
+            this.button_qty6 = new System.Windows.Forms.Button();
+            this.button_qty7 = new System.Windows.Forms.Button();
+            this.button_qty8 = new System.Windows.Forms.Button();
+            this.button_qtyCustom = new System.Windows.Forms.Button();
             this.total_label = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -51,121 +51,121 @@ namespace HackathonProject_Spring2021
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // mngrMenu
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Manager Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.mngrMenu.Location = new System.Drawing.Point(0, 0);
+            this.mngrMenu.Name = "mngrMenu";
+            this.mngrMenu.Size = new System.Drawing.Size(70, 68);
+            this.mngrMenu.TabIndex = 0;
+            this.mngrMenu.Text = "Manager Menu";
+            this.mngrMenu.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(356, 0);
+            this.richTextBox1.Location = new System.Drawing.Point(356, 1);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(301, 498);
+            this.richTextBox1.Size = new System.Drawing.Size(301, 497);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
-            // button2
+            // button_driveThrough
             // 
-            this.button2.Location = new System.Drawing.Point(284, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 68);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Drive Through ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_driveThrough.Location = new System.Drawing.Point(284, 1);
+            this.button_driveThrough.Name = "button_driveThrough";
+            this.button_driveThrough.Size = new System.Drawing.Size(70, 68);
+            this.button_driveThrough.TabIndex = 2;
+            this.button_driveThrough.Text = "Drive Through ";
+            this.button_driveThrough.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button_toGo
             // 
-            this.button3.Location = new System.Drawing.Point(215, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 68);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "To Go";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_toGo.Location = new System.Drawing.Point(215, 1);
+            this.button_toGo.Name = "button_toGo";
+            this.button_toGo.Size = new System.Drawing.Size(70, 68);
+            this.button_toGo.TabIndex = 3;
+            this.button_toGo.Text = "To Go";
+            this.button_toGo.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button_qty1
             // 
-            this.button4.Location = new System.Drawing.Point(315, 70);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 50);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "1";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_qty1.Location = new System.Drawing.Point(315, 70);
+            this.button_qty1.Name = "button_qty1";
+            this.button_qty1.Size = new System.Drawing.Size(39, 50);
+            this.button_qty1.TabIndex = 4;
+            this.button_qty1.Text = "1";
+            this.button_qty1.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button_qty2
             // 
-            this.button5.Location = new System.Drawing.Point(315, 119);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 50);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "2";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_qty2.Location = new System.Drawing.Point(315, 119);
+            this.button_qty2.Name = "button_qty2";
+            this.button_qty2.Size = new System.Drawing.Size(39, 50);
+            this.button_qty2.TabIndex = 5;
+            this.button_qty2.Text = "2";
+            this.button_qty2.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // button_qty3
             // 
-            this.button6.Location = new System.Drawing.Point(315, 168);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 50);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "3";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_qty3.Location = new System.Drawing.Point(315, 168);
+            this.button_qty3.Name = "button_qty3";
+            this.button_qty3.Size = new System.Drawing.Size(39, 50);
+            this.button_qty3.TabIndex = 6;
+            this.button_qty3.Text = "3";
+            this.button_qty3.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // button_qty4
             // 
-            this.button7.Location = new System.Drawing.Point(315, 217);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(39, 50);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "4";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button_qty4.Location = new System.Drawing.Point(315, 217);
+            this.button_qty4.Name = "button_qty4";
+            this.button_qty4.Size = new System.Drawing.Size(39, 50);
+            this.button_qty4.TabIndex = 7;
+            this.button_qty4.Text = "4";
+            this.button_qty4.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // button_qty5
             // 
-            this.button8.Location = new System.Drawing.Point(315, 266);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(39, 50);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "5";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button_qty5.Location = new System.Drawing.Point(315, 266);
+            this.button_qty5.Name = "button_qty5";
+            this.button_qty5.Size = new System.Drawing.Size(39, 50);
+            this.button_qty5.TabIndex = 8;
+            this.button_qty5.Text = "5";
+            this.button_qty5.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // button_qty6
             // 
-            this.button9.Location = new System.Drawing.Point(315, 315);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(39, 50);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "6";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button_qty6.Location = new System.Drawing.Point(315, 315);
+            this.button_qty6.Name = "button_qty6";
+            this.button_qty6.Size = new System.Drawing.Size(39, 50);
+            this.button_qty6.TabIndex = 9;
+            this.button_qty6.Text = "6";
+            this.button_qty6.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button_qty7
             // 
-            this.button10.Location = new System.Drawing.Point(315, 365);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(39, 50);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "7";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button_qty7.Location = new System.Drawing.Point(315, 365);
+            this.button_qty7.Name = "button_qty7";
+            this.button_qty7.Size = new System.Drawing.Size(39, 50);
+            this.button_qty7.TabIndex = 10;
+            this.button_qty7.Text = "7";
+            this.button_qty7.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // button_qty8
             // 
-            this.button11.Location = new System.Drawing.Point(315, 415);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(39, 50);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "8";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button_qty8.Location = new System.Drawing.Point(315, 415);
+            this.button_qty8.Name = "button_qty8";
+            this.button_qty8.Size = new System.Drawing.Size(39, 50);
+            this.button_qty8.TabIndex = 11;
+            this.button_qty8.Text = "8";
+            this.button_qty8.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // button_qtyCustom
             // 
-            this.button12.Location = new System.Drawing.Point(315, 466);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(39, 32);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "< 8";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button_qtyCustom.Location = new System.Drawing.Point(315, 466);
+            this.button_qtyCustom.Name = "button_qtyCustom";
+            this.button_qtyCustom.Size = new System.Drawing.Size(39, 32);
+            this.button_qtyCustom.TabIndex = 12;
+            this.button_qtyCustom.Text = "< 8";
+            this.button_qtyCustom.UseVisualStyleBackColor = true;
             // 
             // total_label
             // 
@@ -196,7 +196,7 @@ namespace HackathonProject_Spring2021
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(301, 411);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Combos";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -206,7 +206,7 @@ namespace HackathonProject_Spring2021
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(301, 411);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Entrees";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
@@ -216,7 +216,7 @@ namespace HackathonProject_Spring2021
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(301, 411);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Sides";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
@@ -226,7 +226,7 @@ namespace HackathonProject_Spring2021
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(301, 411);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.Text = "Drinks";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -236,22 +236,22 @@ namespace HackathonProject_Spring2021
             this.ClientSize = new System.Drawing.Size(657, 548);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_qtyCustom);
+            this.Controls.Add(this.button_qty8);
+            this.Controls.Add(this.button_qty7);
+            this.Controls.Add(this.button_qty6);
+            this.Controls.Add(this.button_qty5);
+            this.Controls.Add(this.button_qty4);
+            this.Controls.Add(this.button_qty3);
+            this.Controls.Add(this.button_qty2);
+            this.Controls.Add(this.button_qty1);
+            this.Controls.Add(this.button_toGo);
+            this.Controls.Add(this.button_driveThrough);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.mngrMenu);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "POS System";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -261,25 +261,25 @@ namespace HackathonProject_Spring2021
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button mngrMenu;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button_driveThrough;
+        private System.Windows.Forms.Button button_qty1;
+        private System.Windows.Forms.Button button_qty2;
+        private System.Windows.Forms.Button button_qty3;
+        private System.Windows.Forms.Button button_qty4;
+        private System.Windows.Forms.Button button_qty5;
+        private System.Windows.Forms.Button button_qty6;
+        private System.Windows.Forms.Button button_qty7;
+        private System.Windows.Forms.Button button_qty8;
+        private System.Windows.Forms.Button button_qtyCustom;
         private System.Windows.Forms.Label total_label;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button_toGo;
     }
 }
 
