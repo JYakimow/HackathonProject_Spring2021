@@ -41,7 +41,7 @@ namespace HackathonProject_Spring2021
         //Chick-fil-A Deluxe Sandwitch
         private void button2_Click(object sender, EventArgs e)
         {
-            this.richTextBox_output.Text = "\n" + "1 Chick-fil-A Deluxe Sandwitch                                        $3.00";
+            this.richTextBox_output.Text = "\n" + "1 Chick-fil-A Deluxe Sandwich                                        $3.00";
         }
 
         //Spicy Chicken Sandwitch
@@ -90,7 +90,8 @@ namespace HackathonProject_Spring2021
 
         private void button_qty1_Click(object sender, EventArgs e)
         {
-            display_new_form();
+            Form_askEdit form3 = new Form_askEdit();
+            form3.ShowDialog();
         }
 
         public void display_new_form()
@@ -115,12 +116,10 @@ namespace HackathonProject_Spring2021
 
         private void button_testBurger_Click(object sender, EventArgs e)
         {
-            listBox1_items.Items.Add("item 1 \n line 2");
         }
 
         private void button_qty2_Click(object sender, EventArgs e)
         {
-            listBox1_items.Items.Add("item 2 \n line 3");
         }
 
         private void listBox1_items_SelectedIndexChanged(object sender, EventArgs e)
