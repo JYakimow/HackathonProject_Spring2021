@@ -21,6 +21,7 @@ namespace HackathonProject_Spring2021
 
         }
     }
+    /*
     public class ingredient
     {
         String[] ingredients = { "" };
@@ -31,6 +32,6 @@ namespace HackathonProject_Spring2021
             ingredients[count] = newingredient;
         }
     }
-
+    */
 
 }

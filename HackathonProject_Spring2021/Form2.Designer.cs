@@ -38,6 +38,8 @@ namespace HackathonProject_Spring2021
             this.button_hIn = new System.Windows.Forms.Button();
             this.button_hOut = new System.Windows.Forms.Button();
             this.button_hRefund = new System.Windows.Forms.Button();
+            this.button_reset = new System.Windows.Forms.Button();
+            this.button_hReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_refund
@@ -138,11 +140,34 @@ namespace HackathonProject_Spring2021
             this.button_hRefund.UseVisualStyleBackColor = false;
             this.button_hRefund.Click += new System.EventHandler(this.button_hRefund_Click);
             // 
+            // button_reset
+            // 
+            this.button_reset.Location = new System.Drawing.Point(12, 280);
+            this.button_reset.Name = "button_reset";
+            this.button_reset.Size = new System.Drawing.Size(239, 45);
+            this.button_reset.TabIndex = 9;
+            this.button_reset.Text = "Reset Order";
+            this.button_reset.UseVisualStyleBackColor = true;
+            // 
+            // button_hReset
+            // 
+            this.button_hReset.BackColor = System.Drawing.Color.Transparent;
+            this.button_hReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_hReset.Image = global::HackathonProject_Spring2021.Properties.Resources.question1;
+            this.button_hReset.Location = new System.Drawing.Point(239, 309);
+            this.button_hReset.Name = "button_hReset";
+            this.button_hReset.Size = new System.Drawing.Size(27, 26);
+            this.button_hReset.TabIndex = 10;
+            this.button_hReset.UseVisualStyleBackColor = false;
+            this.button_hReset.Click += new System.EventHandler(this.button_hReset_Click);
+            // 
             // ManagerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 276);
+            this.ClientSize = new System.Drawing.Size(278, 370);
+            this.Controls.Add(this.button_hReset);
+            this.Controls.Add(this.button_reset);
             this.Controls.Add(this.button_hRefund);
             this.Controls.Add(this.button_hOut);
             this.Controls.Add(this.button_hIn);
@@ -170,5 +195,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_hIn;
         private System.Windows.Forms.Button button_hOut;
         private System.Windows.Forms.Button button_hRefund;
+        private System.Windows.Forms.Button button_reset;
+        private System.Windows.Forms.Button button_hReset;
     }
 }

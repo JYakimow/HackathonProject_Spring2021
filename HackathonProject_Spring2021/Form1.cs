@@ -89,7 +89,7 @@ namespace HackathonProject_Spring2021
 
 
         private void button_qty1_Click(object sender, EventArgs e)
-        { 
+        {
         }
         private void button_mgr_Click(object sender, EventArgs e)
         {
@@ -99,7 +99,7 @@ namespace HackathonProject_Spring2021
         public void mgr_Form()
         {
             ManagerMenu mgrMenu = new ManagerMenu();
-            mgrMenu.ShowDialog();            
+            mgrMenu.ShowDialog();
         }
 
         private void button_testBurger_Click(object sender, EventArgs e)
@@ -123,5 +123,18 @@ namespace HackathonProject_Spring2021
             //formAskEdit.ShowDialog();
             this.richTextBox_output.Text = "test burger";
         }
+        private void button_amtTender_Click(object sender, EventArgs e)
+        {
+            amt_Form();
+        }
+        public void amt_Form()
+        {
+            AmountTender amtTender = new AmountTender();
+            amtTender.ShowDialog();
+        }
+
     }
-}
+
+
+}     
+
