@@ -64,9 +64,9 @@ namespace HackathonProject_Spring2021
             // 
             // richTextBox_output
             // 
-            this.richTextBox_output.Location = new System.Drawing.Point(356, 1);
+            this.richTextBox_output.Location = new System.Drawing.Point(360, 3);
             this.richTextBox_output.Name = "richTextBox_output";
-            this.richTextBox_output.Size = new System.Drawing.Size(301, 497);
+            this.richTextBox_output.Size = new System.Drawing.Size(301, 500);
             this.richTextBox_output.TabIndex = 1;
             this.richTextBox_output.Text = "";
             // 
@@ -106,6 +106,7 @@ namespace HackathonProject_Spring2021
             this.button_qty2.TabIndex = 5;
             this.button_qty2.Text = "2";
             this.button_qty2.UseVisualStyleBackColor = true;
+            this.button_qty2.Click += new System.EventHandler(this.button_qty2_Click);
             // 
             // button_qty3
             // 
@@ -241,12 +242,13 @@ namespace HackathonProject_Spring2021
             this.button_testBurger.TabIndex = 0;
             this.button_testBurger.Text = "test burger";
             this.button_testBurger.UseVisualStyleBackColor = true;
+            this.button_testBurger.Click += new System.EventHandler(this.button_testBurger_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 548);
+            this.ClientSize = new System.Drawing.Size(666, 526);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
             this.Controls.Add(this.button_qtyCustom);
