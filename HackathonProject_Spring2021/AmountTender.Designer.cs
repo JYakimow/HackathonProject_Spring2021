@@ -39,7 +39,6 @@ namespace HackathonProject_Spring2021
             this.label_cash = new System.Windows.Forms.Label();
             this.button_QC10 = new System.Windows.Forms.Button();
             this.button_QC15 = new System.Windows.Forms.Button();
-            this.button_custom = new System.Windows.Forms.Button();
             this.button_payCash = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,17 +46,25 @@ namespace HackathonProject_Spring2021
             this.button_card = new System.Windows.Forms.Button();
             this.button_check = new System.Windows.Forms.Button();
             this.button_giftcard = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button_manual = new System.Windows.Forms.Button();
+            this.textBox_custom = new System.Windows.Forms.TextBox();
+            this.label_dollarsign = new System.Windows.Forms.Label();
+            this.textBox_rt = new System.Windows.Forms.TextBox();
+            this.textBox_sub = new System.Windows.Forms.TextBox();
+            this.textBox_total = new System.Windows.Forms.TextBox();
+            this.textBox_tax = new System.Windows.Forms.TextBox();
+            this.button_reset = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_pay1
             // 
             this.label_pay1.AutoSize = true;
-            this.label_pay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label_pay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label_pay1.ForeColor = System.Drawing.Color.Green;
             this.label_pay1.Location = new System.Drawing.Point(2, 9);
             this.label_pay1.Name = "label_pay1";
-            this.label_pay1.Size = new System.Drawing.Size(157, 17);
+            this.label_pay1.Size = new System.Drawing.Size(183, 20);
             this.label_pay1.TabIndex = 0;
             this.label_pay1.Text = "PAY FOR THIS ORDER";
             // 
@@ -103,9 +110,9 @@ namespace HackathonProject_Spring2021
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(5, 243);
+            this.button1.Location = new System.Drawing.Point(6, 300);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 41);
+            this.button1.Size = new System.Drawing.Size(78, 24);
             this.button1.TabIndex = 5;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -126,7 +133,7 @@ namespace HackathonProject_Spring2021
             this.label_cash.AutoSize = true;
             this.label_cash.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label_cash.ForeColor = System.Drawing.Color.Green;
-            this.label_cash.Location = new System.Drawing.Point(222, 44);
+            this.label_cash.Location = new System.Drawing.Point(222, 59);
             this.label_cash.Name = "label_cash";
             this.label_cash.Size = new System.Drawing.Size(45, 17);
             this.label_cash.TabIndex = 7;
@@ -144,7 +151,7 @@ namespace HackathonProject_Spring2021
             // 
             // button_QC15
             // 
-            this.button_QC15.Location = new System.Drawing.Point(457, 32);
+            this.button_QC15.Location = new System.Drawing.Point(459, 32);
             this.button_QC15.Name = "button_QC15";
             this.button_QC15.Size = new System.Drawing.Size(80, 40);
             this.button_QC15.TabIndex = 9;
@@ -152,25 +159,16 @@ namespace HackathonProject_Spring2021
             this.button_QC15.UseVisualStyleBackColor = true;
             this.button_QC15.Click += new System.EventHandler(this.button_QC15_Click);
             // 
-            // button_custom
-            // 
-            this.button_custom.Location = new System.Drawing.Point(457, 86);
-            this.button_custom.Name = "button_custom";
-            this.button_custom.Size = new System.Drawing.Size(80, 40);
-            this.button_custom.TabIndex = 10;
-            this.button_custom.Text = "CUSTOM";
-            this.button_custom.UseVisualStyleBackColor = true;
-            this.button_custom.Click += new System.EventHandler(this.button_custom_Click);
-            // 
             // button_payCash
             // 
             this.button_payCash.ForeColor = System.Drawing.Color.Green;
-            this.button_payCash.Location = new System.Drawing.Point(285, 86);
+            this.button_payCash.Location = new System.Drawing.Point(285, 78);
             this.button_payCash.Name = "button_payCash";
-            this.button_payCash.Size = new System.Drawing.Size(166, 40);
+            this.button_payCash.Size = new System.Drawing.Size(143, 40);
             this.button_payCash.TabIndex = 11;
             this.button_payCash.Text = "Pay Cash";
             this.button_payCash.UseVisualStyleBackColor = true;
+            this.button_payCash.Click += new System.EventHandler(this.button_payCash_Click);
             // 
             // label1
             // 
@@ -197,7 +195,7 @@ namespace HackathonProject_Spring2021
             this.label_other.AutoSize = true;
             this.label_other.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label_other.ForeColor = System.Drawing.Color.Green;
-            this.label_other.Location = new System.Drawing.Point(222, 169);
+            this.label_other.Location = new System.Drawing.Point(222, 196);
             this.label_other.Name = "label_other";
             this.label_other.Size = new System.Drawing.Size(57, 17);
             this.label_other.TabIndex = 14;
@@ -212,6 +210,7 @@ namespace HackathonProject_Spring2021
             this.button_card.TabIndex = 15;
             this.button_card.Text = "Debit//Credit";
             this.button_card.UseVisualStyleBackColor = true;
+            this.button_card.Click += new System.EventHandler(this.button_card_Click);
             // 
             // button_check
             // 
@@ -221,6 +220,7 @@ namespace HackathonProject_Spring2021
             this.button_check.TabIndex = 16;
             this.button_check.Text = "Check";
             this.button_check.UseVisualStyleBackColor = true;
+            this.button_check.Click += new System.EventHandler(this.button_check_Click);
             // 
             // button_giftcard
             // 
@@ -230,22 +230,110 @@ namespace HackathonProject_Spring2021
             this.button_giftcard.TabIndex = 17;
             this.button_giftcard.Text = "Gift Card";
             this.button_giftcard.UseVisualStyleBackColor = true;
+            this.button_giftcard.Click += new System.EventHandler(this.button_giftcard_Click);
             // 
-            // button5
+            // button_manual
             // 
-            this.button5.Location = new System.Drawing.Point(285, 157);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 40);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Manual Card Entry";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_manual.Location = new System.Drawing.Point(285, 157);
+            this.button_manual.Name = "button_manual";
+            this.button_manual.Size = new System.Drawing.Size(80, 40);
+            this.button_manual.TabIndex = 18;
+            this.button_manual.Text = "Manual Card Entry";
+            this.button_manual.UseVisualStyleBackColor = true;
+            this.button_manual.Click += new System.EventHandler(this.button_manual_Click);
+            // 
+            // textBox_custom
+            // 
+            this.textBox_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBox_custom.Location = new System.Drawing.Point(459, 85);
+            this.textBox_custom.Name = "textBox_custom";
+            this.textBox_custom.Size = new System.Drawing.Size(80, 29);
+            this.textBox_custom.TabIndex = 23;
+            this.textBox_custom.TextChanged += new System.EventHandler(this.textBox_custom_TextChanged);
+            // 
+            // label_dollarsign
+            // 
+            this.label_dollarsign.AutoSize = true;
+            this.label_dollarsign.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label_dollarsign.Location = new System.Drawing.Point(434, 86);
+            this.label_dollarsign.Name = "label_dollarsign";
+            this.label_dollarsign.Size = new System.Drawing.Size(20, 24);
+            this.label_dollarsign.TabIndex = 24;
+            this.label_dollarsign.Text = "$";
+            // 
+            // textBox_rt
+            // 
+            this.textBox_rt.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox_rt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox_rt.ForeColor = System.Drawing.Color.Red;
+            this.textBox_rt.Location = new System.Drawing.Point(23, 196);
+            this.textBox_rt.Name = "textBox_rt";
+            this.textBox_rt.ReadOnly = true;
+            this.textBox_rt.Size = new System.Drawing.Size(100, 23);
+            this.textBox_rt.TabIndex = 25;
+            // 
+            // textBox_sub
+            // 
+            this.textBox_sub.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox_sub.Location = new System.Drawing.Point(94, 56);
+            this.textBox_sub.Name = "textBox_sub";
+            this.textBox_sub.ReadOnly = true;
+            this.textBox_sub.Size = new System.Drawing.Size(89, 20);
+            this.textBox_sub.TabIndex = 28;
+            // 
+            // textBox_total
+            // 
+            this.textBox_total.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox_total.Location = new System.Drawing.Point(94, 109);
+            this.textBox_total.Name = "textBox_total";
+            this.textBox_total.ReadOnly = true;
+            this.textBox_total.Size = new System.Drawing.Size(89, 20);
+            this.textBox_total.TabIndex = 29;
+            // 
+            // textBox_tax
+            // 
+            this.textBox_tax.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox_tax.Location = new System.Drawing.Point(94, 82);
+            this.textBox_tax.Name = "textBox_tax";
+            this.textBox_tax.ReadOnly = true;
+            this.textBox_tax.Size = new System.Drawing.Size(89, 20);
+            this.textBox_tax.TabIndex = 30;
+            // 
+            // button_reset
+            // 
+            this.button_reset.Location = new System.Drawing.Point(484, 300);
+            this.button_reset.Name = "button_reset";
+            this.button_reset.Size = new System.Drawing.Size(78, 24);
+            this.button_reset.TabIndex = 31;
+            this.button_reset.Text = "Reset";
+            this.button_reset.UseVisualStyleBackColor = true;
+            this.button_reset.Click += new System.EventHandler(this.button_back_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label3.Location = new System.Drawing.Point(2, 195);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 24);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "$";
             // 
             // AmountTender
             // 
+            this.AcceptButton = this.button_payCash;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 327);
-            this.Controls.Add(this.button5);
+            this.ClientSize = new System.Drawing.Size(570, 327);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button_reset);
+            this.Controls.Add(this.textBox_tax);
+            this.Controls.Add(this.textBox_total);
+            this.Controls.Add(this.textBox_sub);
+            this.Controls.Add(this.textBox_rt);
+            this.Controls.Add(this.label_dollarsign);
+            this.Controls.Add(this.textBox_custom);
+            this.Controls.Add(this.button_manual);
             this.Controls.Add(this.button_giftcard);
             this.Controls.Add(this.button_check);
             this.Controls.Add(this.button_card);
@@ -253,7 +341,6 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_payCash);
-            this.Controls.Add(this.button_custom);
             this.Controls.Add(this.button_QC15);
             this.Controls.Add(this.button_QC10);
             this.Controls.Add(this.label_cash);
@@ -283,7 +370,6 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Label label_cash;
         private System.Windows.Forms.Button button_QC10;
         private System.Windows.Forms.Button button_QC15;
-        private System.Windows.Forms.Button button_custom;
         private System.Windows.Forms.Button button_payCash;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -291,6 +377,14 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_card;
         private System.Windows.Forms.Button button_check;
         private System.Windows.Forms.Button button_giftcard;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_manual;
+        private System.Windows.Forms.TextBox textBox_custom;
+        private System.Windows.Forms.Label label_dollarsign;
+        private System.Windows.Forms.TextBox textBox_rt;
+        private System.Windows.Forms.TextBox textBox_sub;
+        private System.Windows.Forms.TextBox textBox_total;
+        private System.Windows.Forms.TextBox textBox_tax;
+        private System.Windows.Forms.Button button_reset;
+        private System.Windows.Forms.Label label3;
     }
 }
