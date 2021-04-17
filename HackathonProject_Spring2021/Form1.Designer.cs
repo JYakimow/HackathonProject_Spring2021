@@ -100,6 +100,7 @@ namespace HackathonProject_Spring2021
             // 
             this.richTextBox_output.Location = new System.Drawing.Point(360, 3);
             this.richTextBox_output.Name = "richTextBox_output";
+            this.richTextBox_output.ReadOnly = true;
             this.richTextBox_output.Size = new System.Drawing.Size(301, 500);
             this.richTextBox_output.TabIndex = 1;
             this.richTextBox_output.Text = "";
@@ -592,6 +593,7 @@ namespace HackathonProject_Spring2021
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 526);
             this.Controls.Add(this.button_amtTender);
+            this.Controls.Add(this.button_qtyCustom);
             this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
