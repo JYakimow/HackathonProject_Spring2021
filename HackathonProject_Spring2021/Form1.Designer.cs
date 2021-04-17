@@ -29,8 +29,8 @@ namespace HackathonProject_Spring2021
         /// </summary>
         private void InitializeComponent()
         {
-            this.mngrMenu = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button_mngrMenu = new System.Windows.Forms.Button();
+            this.richTextBox_output = new System.Windows.Forms.RichTextBox();
             this.button_driveThrough = new System.Windows.Forms.Button();
             this.button_toGo = new System.Windows.Forms.Button();
             this.button_qty1 = new System.Windows.Forms.Button();
@@ -48,25 +48,27 @@ namespace HackathonProject_Spring2021
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button_testBurger = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mngrMenu
+            // button_mngrMenu
             // 
-            this.mngrMenu.Location = new System.Drawing.Point(0, 0);
-            this.mngrMenu.Name = "mngrMenu";
-            this.mngrMenu.Size = new System.Drawing.Size(70, 68);
-            this.mngrMenu.TabIndex = 0;
-            this.mngrMenu.Text = "Manager Menu";
-            this.mngrMenu.UseVisualStyleBackColor = true;
+            this.button_mngrMenu.Location = new System.Drawing.Point(0, 0);
+            this.button_mngrMenu.Name = "button_mngrMenu";
+            this.button_mngrMenu.Size = new System.Drawing.Size(70, 68);
+            this.button_mngrMenu.TabIndex = 0;
+            this.button_mngrMenu.Text = "Manager Menu";
+            this.button_mngrMenu.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // richTextBox_output
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(356, 1);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(301, 497);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.richTextBox_output.Location = new System.Drawing.Point(356, 1);
+            this.richTextBox_output.Name = "richTextBox_output";
+            this.richTextBox_output.Size = new System.Drawing.Size(301, 497);
+            this.richTextBox_output.TabIndex = 1;
+            this.richTextBox_output.Text = "";
             // 
             // button_driveThrough
             // 
@@ -191,6 +193,7 @@ namespace HackathonProject_Spring2021
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button_testBurger);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -229,6 +232,15 @@ namespace HackathonProject_Spring2021
             this.tabPage4.Text = "Drinks";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button_testBurger
+            // 
+            this.button_testBurger.Location = new System.Drawing.Point(9, 4);
+            this.button_testBurger.Name = "button_testBurger";
+            this.button_testBurger.Size = new System.Drawing.Size(57, 55);
+            this.button_testBurger.TabIndex = 0;
+            this.button_testBurger.Text = "test burger";
+            this.button_testBurger.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,13 +259,14 @@ namespace HackathonProject_Spring2021
             this.Controls.Add(this.button_qty1);
             this.Controls.Add(this.button_toGo);
             this.Controls.Add(this.button_driveThrough);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.mngrMenu);
+            this.Controls.Add(this.richTextBox_output);
+            this.Controls.Add(this.button_mngrMenu);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = " POS System";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,8 +274,8 @@ namespace HackathonProject_Spring2021
 
         #endregion
 
-        private System.Windows.Forms.Button mngrMenu;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button_mngrMenu;
+        private System.Windows.Forms.RichTextBox richTextBox_output;
         private System.Windows.Forms.Button button_driveThrough;
         private System.Windows.Forms.Button button_qty1;
         private System.Windows.Forms.Button button_qty2;
@@ -280,6 +293,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button_toGo;
+        private System.Windows.Forms.Button button_testBurger;
     }
 }
 
