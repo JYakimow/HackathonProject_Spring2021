@@ -43,9 +43,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Chick-fil-A Deluxe Sandwitch
@@ -54,9 +54,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Deluxe Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Spicy Chicken Sandwitch
@@ -65,9 +65,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Chicken Sandwich-" + tempPrice;
+            OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Chicken Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Spicy Deluxe Sandwitch
@@ -76,9 +76,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Deluxe Sandwich-" + tempPrice;
+            OrderBox  = OrderBox + "\n" + " " + quanitity + " Spicy Deluxe Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Grilled Chicken Sandwitch
@@ -87,9 +87,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Chicken Sandwich-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Chicken Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Chick-fil-A Grilled Chicken Club Sandwitch
@@ -98,9 +98,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwich-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick fil-A Grilled Chicken Club Sandwich - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Grilled Spicy Deluxe
@@ -109,9 +109,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Spicy Deluxe-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Spicy Deluxe - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Chick-fil-A Nuggets
@@ -120,9 +120,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Nuggets-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Nuggets - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
         //Grilled Nuggets
@@ -131,9 +131,9 @@ namespace HackathonProject_Spring2021
             Amount = 3.00;
             tempPrice = quanitity * 3.00;
             total = total + tempPrice;
-            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Nuggets-" + tempPrice;
+            OrderBox = OrderBox + "\n" + " " + quanitity + " Grilled Nuggets - $" + tempPrice;
             this.richTextBox_output.Text = OrderBox;
-            this.total_label.Text = "Total: " + total;
+            this.total_label.Text = "Total: $" + total;
         }
 
 
@@ -172,6 +172,7 @@ namespace HackathonProject_Spring2021
             this.richTextBox_output.Text = "test burger";
         }
 
+        //Amount Buttons
         private void button_qty1_Click_1(object sender, EventArgs e)
         {
             quanitity = 1;
