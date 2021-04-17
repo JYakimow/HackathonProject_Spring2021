@@ -41,6 +41,8 @@ namespace HackathonProject_Spring2021
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.total_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -147,14 +149,35 @@ namespace HackathonProject_Spring2021
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(39, 50);
             this.button11.TabIndex = 11;
-            this.button11.Text = "5";
+            this.button11.Text = "8";
             this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(315, 466);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(39, 32);
+            this.button12.TabIndex = 12;
+            this.button12.Text = "< 8";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // total_label
+            // 
+            this.total_label.AutoSize = true;
+            this.total_label.Location = new System.Drawing.Point(366, 505);
+            this.total_label.Name = "total_label";
+            this.total_label.Size = new System.Drawing.Size(37, 13);
+            this.total_label.TabIndex = 13;
+            this.total_label.Text = "Total: ";
+            this.total_label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 548);
+            this.Controls.Add(this.total_label);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -171,6 +194,7 @@ namespace HackathonProject_Spring2021
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -188,6 +212,8 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label total_label;
     }
 }
 
