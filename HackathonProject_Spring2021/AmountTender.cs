@@ -17,23 +17,33 @@ namespace HackathonProject_Spring2021
         {
             this.theTotal = theTotal;
             InitializeComponent();
-            MessageBox.Show(theTotal.ToString());
+            //MessageBox.Show(theTotal.ToString());
 
         }
+        double tax = 0.05;
+        double remainder; 
         double input;
         double rt;
-        double ft = 10;
+        double finTotal;
+        double finTotal2;
 
 
 
-
-        private void AmountTender_Load(object sender, EventArgs e)
+        private void AmountTender_Load_1(object sender, EventArgs e)
         {
+            finTotal = (theTotal * tax);
             textBox_custom.Select();
             textBox_custom.Focus();
-            //public static int quantity;
+            theTotal = Convert.ToDouble(theTotal);
+            textBox_sub.Text = theTotal.ToString();
+            textBox_tax.Text = finTotal.ToString();
+            finTotal2 = finTotal + theTotal;
+            textBox_total.Text = finTotal2.ToString();
+
             
+
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -43,7 +53,7 @@ namespace HackathonProject_Spring2021
         private void button_QC5_Click(object sender, EventArgs e)
         {
             // substracts 5 dollars from the total underneath Pay Full Amount (running total or label_rt) 
-            rt += -5.00;
+            rt += 5.00;
             textBox_rt.Text = rt.ToString();
         }
 
@@ -51,7 +61,7 @@ namespace HackathonProject_Spring2021
         {
             // substracts 10 dollars from the total underneath Pay Full Amount (running total or label_rt) 
 
-            rt += -10.00;
+            rt += 10.00;
             textBox_rt.Text = rt.ToString();
 
         }
@@ -59,28 +69,52 @@ namespace HackathonProject_Spring2021
         private void button_QC15_Click(object sender, EventArgs e)
         {
             // substracts 15 dollars from the total underneath Pay Full Amount (running total or label_rt) 
-            rt += -15.00;
+            rt += 15.00;
             textBox_rt.Text = rt.ToString();
         }
 
         private void button_giftcard_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Transaction Completed");
+            textBox_custom.Text = string.Empty;
+            textBox_rt.Text = string.Empty;
+            textBox_total.Text = string.Empty;
+            textBox_tax.Text = string.Empty;
+            textBox_sub.Text = string.Empty;
+            this.Close();
         }
 
         private void button_card_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Transaction Completed");
+            textBox_custom.Text = string.Empty;
+            textBox_rt.Text = string.Empty;
+            textBox_total.Text = string.Empty;
+            textBox_tax.Text = string.Empty;
+            textBox_sub.Text = string.Empty;
+            this.Close();
         }
 
         private void button_manual_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please Enter Card");
+            MessageBox.Show("Transaction Completed");
+            textBox_custom.Text = string.Empty;
+            textBox_rt.Text = string.Empty;
+            textBox_total.Text = string.Empty;
+            textBox_tax.Text = string.Empty;
+            textBox_sub.Text = string.Empty;
+            this.Close();
         }
 
         private void button_check_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Enter Check Info");
+            MessageBox.Show("Transaction Completed");
+            textBox_custom.Text = string.Empty;
+            textBox_rt.Text = string.Empty;
+            textBox_total.Text = string.Empty;
+            textBox_tax.Text = string.Empty;
+            textBox_sub.Text = string.Empty;
+            this.Close();
         }
 
         private void button_payCash_Click(object sender, EventArgs e)
@@ -93,7 +127,7 @@ namespace HackathonProject_Spring2021
                 input = Convert.ToDouble(textBox_custom.Text);
                 if (input > 0)
                 {
-                    rt -= Convert.ToDouble(textBox_custom.Text);
+                    rt += Convert.ToDouble(textBox_custom.Text);
                     textBox_rt.Text = rt.ToString();
                     textBox_custom.Text = "";
                     textBox_custom.Text = string.Empty;
@@ -131,6 +165,46 @@ namespace HackathonProject_Spring2021
         private void button2_Click(object sender, EventArgs e)
         {
             //made to keep original balance of the bill
+        }
+
+        private void textBox_total_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Pay_Click(object sender, EventArgs e)
+        {
+            
+            if (rt >= theTotal)
+            {
+                if (rt > theTotal)
+                {
+                    remainder = rt - finTotal2;
+                    MessageBox.Show("Your Change Back: $" + remainder);
+                }
+                MessageBox.Show("Transaction Complete");
+                textBox_custom.Text = string.Empty;
+                textBox_rt.Text = string.Empty;
+                textBox_total.Text = string.Empty;
+                textBox_tax.Text = string.Empty;
+                textBox_sub.Text = string.Empty;
+                this.Close();
+               
+
+                
+            }
+            else
+            {
+                MessageBox.Show("Please Match Amount Running Total with Total");
+
+            }
+        }
+
+        private void button_reset_Click(object sender, EventArgs e)
+        {
+            textBox_custom.Text = string.Empty;
+            textBox_rt.Text = string.Empty;
+            textBox_rt.Text = textBox_total.Text;
         }
     }
 }
