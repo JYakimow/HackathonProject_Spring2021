@@ -598,6 +598,7 @@ namespace HackathonProject_Spring2021
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 526);
+            this.Controls.Add(this.button_qtyCustom);
             this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);

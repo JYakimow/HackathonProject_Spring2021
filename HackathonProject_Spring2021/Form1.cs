@@ -14,9 +14,9 @@ namespace HackathonProject_Spring2021
     public partial class Form1 : Form
     {
         int quanitity = 1;
-        double total = 0;
-        double Amount = 0;
-        double tempPrice = 0;
+        float total = 0;
+        float Amount = 0;
+        float tempPrice = 0;
 
         String OrderBox = "";
         public Form1()
@@ -306,14 +306,14 @@ namespace HackathonProject_Spring2021
             quanitity = 8;
         }
 
-        private void button_qtyCustom_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void total_label_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button_qtyCustom_Click_1(object sender, EventArgs e)
+        {
+
         }
 
         private void button_largeDrink_Click(object sender, EventArgs e)
