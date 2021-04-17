@@ -569,7 +569,7 @@ namespace HackathonProject_Spring2021
             // 
             // button_modifyExisting
             // 
-            this.button_modifyExisting.Location = new System.Drawing.Point(183, 1);
+            this.button_modifyExisting.Location = new System.Drawing.Point(172, 1);
             this.button_modifyExisting.Name = "button_modifyExisting";
             this.button_modifyExisting.Size = new System.Drawing.Size(70, 68);
             this.button_modifyExisting.TabIndex = 15;
@@ -580,7 +580,7 @@ namespace HackathonProject_Spring2021
             // 
             this.button_amtTender.Location = new System.Drawing.Point(242, 1);
             this.button_amtTender.Name = "button_amtTender";
-            this.button_amtTender.Size = new System.Drawing.Size(112, 69);
+            this.button_amtTender.Size = new System.Drawing.Size(112, 68);
             this.button_amtTender.TabIndex = 17;
             this.button_amtTender.Text = "Amount Tender";
             this.button_amtTender.UseVisualStyleBackColor = true;
@@ -592,7 +592,6 @@ namespace HackathonProject_Spring2021
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 526);
             this.Controls.Add(this.button_amtTender);
-            this.Controls.Add(this.button_qtyCustom);
             this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);

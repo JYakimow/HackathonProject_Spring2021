@@ -17,17 +17,28 @@ namespace HackathonProject_Spring2021
         float total = 0;
         float Amount = 0;
         float tempPrice = 0;
+        string OrderBox = "";
+        Ingredient[] ingredientArr;
 
-        String OrderBox = "";
+        //MessageBox.Show("test");
+        //var test = new Ingredient("test", 1.0);
+
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //test
+            //arrays here
+            ingredientArr = new Ingredient[10];
+            //fill ingredients
+            Ingredient bun = new Ingredient("bun", 0.30);
+            ingredientArr[0] = bun;
 
+
+            //MessageBox.Show(test.name);
         }
 
         private void richTextBox_output_TextChanged(object sender, EventArgs e)
@@ -331,7 +342,5 @@ namespace HackathonProject_Spring2021
         }
 
     }
-
-
 }     
 
