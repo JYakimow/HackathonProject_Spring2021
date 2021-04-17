@@ -22,5 +22,15 @@ namespace HackathonProject_Spring2021
             //test
 
         }
+        
+        private void mngrMenu_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox_mgr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,7 +29,6 @@ namespace HackathonProject_Spring2021
         /// </summary>
         private void InitializeComponent()
         {
-            this.mngrMenu = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button_driveThrough = new System.Windows.Forms.Button();
             this.button_toGo = new System.Windows.Forms.Button();
@@ -48,17 +47,9 @@ namespace HackathonProject_Spring2021
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.mngrMenu = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mngrMenu
-            // 
-            this.mngrMenu.Location = new System.Drawing.Point(0, 0);
-            this.mngrMenu.Name = "mngrMenu";
-            this.mngrMenu.Size = new System.Drawing.Size(70, 68);
-            this.mngrMenu.TabIndex = 0;
-            this.mngrMenu.Text = "Manager Menu";
-            this.mngrMenu.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
@@ -229,11 +220,21 @@ namespace HackathonProject_Spring2021
             this.tabPage4.Text = "Drinks";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // mngrMenu
+            // 
+            this.mngrMenu.Location = new System.Drawing.Point(0, 1);
+            this.mngrMenu.Name = "mngrMenu";
+            this.mngrMenu.Size = new System.Drawing.Size(70, 68);
+            this.mngrMenu.TabIndex = 0;
+            this.mngrMenu.Text = "Manager Menu";
+            this.mngrMenu.UseVisualStyleBackColor = true;
+            this.mngrMenu.Click += new System.EventHandler(this.mngrMenu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 548);
+            this.ClientSize = new System.Drawing.Size(689, 548);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
             this.Controls.Add(this.button_qtyCustom);
@@ -260,8 +261,6 @@ namespace HackathonProject_Spring2021
         }
 
         #endregion
-
-        private System.Windows.Forms.Button mngrMenu;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button_driveThrough;
         private System.Windows.Forms.Button button_qty1;
@@ -280,6 +279,7 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button_toGo;
+        private System.Windows.Forms.Button mngrMenu;
     }
 }
 
