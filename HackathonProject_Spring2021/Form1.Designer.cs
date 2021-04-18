@@ -31,6 +31,7 @@ namespace HackathonProject_Spring2021
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button_mgr = new System.Windows.Forms.Button();
             this.richTextBox_output = new System.Windows.Forms.RichTextBox();
             this.button_qty1 = new System.Windows.Forms.Button();
@@ -79,6 +80,9 @@ namespace HackathonProject_Spring2021
             this.button_mediumDrink = new System.Windows.Forms.Button();
             this.button_modifyExisting = new System.Windows.Forms.Button();
             this.button_amtTender = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Clock = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -222,7 +226,7 @@ namespace HackathonProject_Spring2021
             this.tabPage1.Controls.Add(this.button10_Combo1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.Size = new System.Drawing.Size(301, 411);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Combos";
@@ -322,7 +326,7 @@ namespace HackathonProject_Spring2021
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage2.Size = new System.Drawing.Size(301, 411);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Entrees";
@@ -431,7 +435,7 @@ namespace HackathonProject_Spring2021
             this.tabPage3.Controls.Add(this.button19);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage3.Size = new System.Drawing.Size(301, 411);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Sides";
@@ -534,7 +538,7 @@ namespace HackathonProject_Spring2021
             this.tabPage4.Controls.Add(this.button_mediumDrink);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage4.Size = new System.Drawing.Size(301, 411);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Drinks";
@@ -587,13 +591,40 @@ namespace HackathonProject_Spring2021
             this.button_amtTender.UseVisualStyleBackColor = true;
             this.button_amtTender.Click += new System.EventHandler(this.button_amtTender_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(76, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 31);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "00:00";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(89, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 24);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Time";
+            // 
+            // Clock
+            // 
+            this.Clock.Interval = 1000;
+            this.Clock.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 526);
+            this.ClientSize = new System.Drawing.Size(666, 476);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_amtTender);
-
             this.Controls.Add(this.button_modifyExisting);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.total_label);
@@ -675,6 +706,9 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer Clock;
     }
 }
 

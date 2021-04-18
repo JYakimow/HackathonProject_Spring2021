@@ -27,11 +27,16 @@ namespace HackathonProject_Spring2021
         public Form1()
         {
             InitializeComponent();
-
+        }
+        //Clock
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("hh:mm");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Clock.Start();
             //arrays here
             ingredientArr = new Ingredient[11];
             //fill ingredients
@@ -81,6 +86,7 @@ namespace HackathonProject_Spring2021
             Chicken_Sandwich_Ingredients[1] = FriedChicken_Patty;
             Chicken_Sandwich_Ingredients[2] = Pickles;
 
+            Amount = 3.00;
             tempPrice = quanitity * Amount;
             total = total + tempPrice;
             OrderBox = OrderBox + "\n" + " " + quanitity + " Chick-fil-A Chicken Sandwich - $" + tempPrice;
@@ -451,7 +457,7 @@ namespace HackathonProject_Spring2021
         private void button_amtTender_Click(object sender, EventArgs e)
         {
         amt_Form();
-    }
+        }
         public void amt_Form()
         {
             //int aNum = 0;
@@ -459,12 +465,17 @@ namespace HackathonProject_Spring2021
             //public static double theTotal = aTotal;
             AmountTender amtTender = new AmountTender(aTotal);
             amtTender.ShowDialog();
-    }
+        }
 
         private void button_modifyExisting_Click(object sender, EventArgs e)
         {
             Form_editAnItem aForm = new Form_editAnItem();
             aForm.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }     

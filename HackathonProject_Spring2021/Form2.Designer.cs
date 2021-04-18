@@ -148,6 +148,7 @@ namespace HackathonProject_Spring2021
             this.button_reset.TabIndex = 9;
             this.button_reset.Text = "Reset Order";
             this.button_reset.UseVisualStyleBackColor = true;
+            this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
             // 
             // button_hReset
             // 
