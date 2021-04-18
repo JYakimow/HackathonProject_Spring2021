@@ -64,10 +64,6 @@ namespace HackathonProject_Spring2021
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button_largeDrink = new System.Windows.Forms.Button();
-            this.button_smallDrink = new System.Windows.Forms.Button();
-            this.button_mediumDrink = new System.Windows.Forms.Button();
             this.button_modifyExisting = new System.Windows.Forms.Button();
             this.button_amtTender = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,7 +72,6 @@ namespace HackathonProject_Spring2021
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_mgr
@@ -194,7 +189,6 @@ namespace HackathonProject_Spring2021
             // 
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(0, 70);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -214,7 +208,7 @@ namespace HackathonProject_Spring2021
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(301, 411);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Entrees";
@@ -323,7 +317,7 @@ namespace HackathonProject_Spring2021
             this.tabPage3.Controls.Add(this.button19);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(301, 411);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Sides";
@@ -415,50 +409,9 @@ namespace HackathonProject_Spring2021
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(75, 58);
             this.button19.TabIndex = 0;
-            this.button19.Text = "Chick-fil-A Waffle Potato Fies";
+            this.button19.Text = "Waffle Fries";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button_largeDrink);
-            this.tabPage4.Controls.Add(this.button_smallDrink);
-            this.tabPage4.Controls.Add(this.button_mediumDrink);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage4.Size = new System.Drawing.Size(301, 411);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Drinks";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button_largeDrink
-            // 
-            this.button_largeDrink.Location = new System.Drawing.Point(8, 6);
-            this.button_largeDrink.Name = "button_largeDrink";
-            this.button_largeDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_largeDrink.TabIndex = 3;
-            this.button_largeDrink.Text = "Large";
-            this.button_largeDrink.UseVisualStyleBackColor = true;
-            this.button_largeDrink.Click += new System.EventHandler(this.button_largeDrink_Click);
-            // 
-            // button_smallDrink
-            // 
-            this.button_smallDrink.Location = new System.Drawing.Point(203, 6);
-            this.button_smallDrink.Name = "button_smallDrink";
-            this.button_smallDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_smallDrink.TabIndex = 2;
-            this.button_smallDrink.Text = "Small";
-            this.button_smallDrink.UseVisualStyleBackColor = true;
-            // 
-            // button_mediumDrink
-            // 
-            this.button_mediumDrink.Location = new System.Drawing.Point(105, 6);
-            this.button_mediumDrink.Name = "button_mediumDrink";
-            this.button_mediumDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_mediumDrink.TabIndex = 1;
-            this.button_mediumDrink.Text = "Medium";
-            this.button_mediumDrink.UseVisualStyleBackColor = true;
             // 
             // button_modifyExisting
             // 
@@ -534,7 +487,6 @@ namespace HackathonProject_Spring2021
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -558,7 +510,6 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button_testBurger;
         private System.Windows.Forms.Button button_toGo;
         private System.Windows.Forms.Button button1;
@@ -570,9 +521,6 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button_largeDrink;
-        private System.Windows.Forms.Button button_smallDrink;
-        private System.Windows.Forms.Button button_mediumDrink;
         private System.Windows.Forms.Button button_modifyExisting;
         private System.Windows.Forms.Button button_amtTender;
         private System.Windows.Forms.Button button27;
