@@ -18,7 +18,7 @@ namespace HackathonProject_Spring2021
         double Amount = 0;
         double tempPrice = 0;
         string OrderBox = "";
-        public static double aTotal;
+        public double aTotal;
         Ingredient[] ingredientArr;
 
         //MessageBox.Show("test");
