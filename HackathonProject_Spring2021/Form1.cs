@@ -34,6 +34,7 @@ namespace HackathonProject_Spring2021
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = DateTime.Now.ToString("hh:mm");
+            label2.Text = DateTime.Now.ToString("MM dd yy");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -513,6 +514,16 @@ namespace HackathonProject_Spring2021
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }
