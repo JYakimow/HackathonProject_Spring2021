@@ -45,16 +45,6 @@ namespace HackathonProject_Spring2021
             this.button_qty8 = new System.Windows.Forms.Button();
             this.total_label = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button18_Combo3 = new System.Windows.Forms.Button();
-            this.button17_Combo9 = new System.Windows.Forms.Button();
-            this.button16_Combo8 = new System.Windows.Forms.Button();
-            this.button15_Combo7 = new System.Windows.Forms.Button();
-            this.button14_Combo6 = new System.Windows.Forms.Button();
-            this.button13_Combo5 = new System.Windows.Forms.Button();
-            this.button12_Combo4 = new System.Windows.Forms.Button();
-            this.button11_Combo2 = new System.Windows.Forms.Button();
-            this.button10_Combo1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -75,20 +65,14 @@ namespace HackathonProject_Spring2021
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button_largeDrink = new System.Windows.Forms.Button();
-            this.button_smallDrink = new System.Windows.Forms.Button();
-            this.button_mediumDrink = new System.Windows.Forms.Button();
             this.button_modifyExisting = new System.Windows.Forms.Button();
             this.button_amtTender = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Clock = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_mgr
@@ -204,115 +188,13 @@ namespace HackathonProject_Spring2021
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(0, 70);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(309, 437);
             this.tabControl1.TabIndex = 14;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.button18_Combo3);
-            this.tabPage1.Controls.Add(this.button17_Combo9);
-            this.tabPage1.Controls.Add(this.button16_Combo8);
-            this.tabPage1.Controls.Add(this.button15_Combo7);
-            this.tabPage1.Controls.Add(this.button14_Combo6);
-            this.tabPage1.Controls.Add(this.button13_Combo5);
-            this.tabPage1.Controls.Add(this.button12_Combo4);
-            this.tabPage1.Controls.Add(this.button11_Combo2);
-            this.tabPage1.Controls.Add(this.button10_Combo1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(301, 411);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Combos";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button18_Combo3
-            // 
-            this.button18_Combo3.Location = new System.Drawing.Point(171, 6);
-            this.button18_Combo3.Name = "button18_Combo3";
-            this.button18_Combo3.Size = new System.Drawing.Size(75, 60);
-            this.button18_Combo3.TabIndex = 9;
-            this.button18_Combo3.Text = "Combo 3";
-            this.button18_Combo3.UseVisualStyleBackColor = true;
-            // 
-            // button17_Combo9
-            // 
-            this.button17_Combo9.Location = new System.Drawing.Point(171, 139);
-            this.button17_Combo9.Name = "button17_Combo9";
-            this.button17_Combo9.Size = new System.Drawing.Size(75, 61);
-            this.button17_Combo9.TabIndex = 8;
-            this.button17_Combo9.Text = "Combo 9";
-            this.button17_Combo9.UseVisualStyleBackColor = true;
-            // 
-            // button16_Combo8
-            // 
-            this.button16_Combo8.Location = new System.Drawing.Point(90, 139);
-            this.button16_Combo8.Name = "button16_Combo8";
-            this.button16_Combo8.Size = new System.Drawing.Size(75, 61);
-            this.button16_Combo8.TabIndex = 7;
-            this.button16_Combo8.Text = "Combo 8";
-            this.button16_Combo8.UseVisualStyleBackColor = true;
-            // 
-            // button15_Combo7
-            // 
-            this.button15_Combo7.Location = new System.Drawing.Point(9, 139);
-            this.button15_Combo7.Name = "button15_Combo7";
-            this.button15_Combo7.Size = new System.Drawing.Size(75, 61);
-            this.button15_Combo7.TabIndex = 6;
-            this.button15_Combo7.Text = "Combo 7";
-            this.button15_Combo7.UseVisualStyleBackColor = true;
-            // 
-            // button14_Combo6
-            // 
-            this.button14_Combo6.Location = new System.Drawing.Point(171, 72);
-            this.button14_Combo6.Name = "button14_Combo6";
-            this.button14_Combo6.Size = new System.Drawing.Size(75, 61);
-            this.button14_Combo6.TabIndex = 5;
-            this.button14_Combo6.Text = "Combo 6";
-            this.button14_Combo6.UseVisualStyleBackColor = true;
-            // 
-            // button13_Combo5
-            // 
-            this.button13_Combo5.Location = new System.Drawing.Point(90, 72);
-            this.button13_Combo5.Name = "button13_Combo5";
-            this.button13_Combo5.Size = new System.Drawing.Size(75, 61);
-            this.button13_Combo5.TabIndex = 4;
-            this.button13_Combo5.Text = "Combo 5";
-            this.button13_Combo5.UseVisualStyleBackColor = true;
-            // 
-            // button12_Combo4
-            // 
-            this.button12_Combo4.Location = new System.Drawing.Point(9, 72);
-            this.button12_Combo4.Name = "button12_Combo4";
-            this.button12_Combo4.Size = new System.Drawing.Size(75, 61);
-            this.button12_Combo4.TabIndex = 3;
-            this.button12_Combo4.Text = "Combo 4";
-            this.button12_Combo4.UseVisualStyleBackColor = true;
-            // 
-            // button11_Combo2
-            // 
-            this.button11_Combo2.Location = new System.Drawing.Point(90, 6);
-            this.button11_Combo2.Name = "button11_Combo2";
-            this.button11_Combo2.Size = new System.Drawing.Size(75, 60);
-            this.button11_Combo2.TabIndex = 2;
-            this.button11_Combo2.Text = "Combo 2";
-            this.button11_Combo2.UseVisualStyleBackColor = true;
-            // 
-            // button10_Combo1
-            // 
-            this.button10_Combo1.Location = new System.Drawing.Point(9, 6);
-            this.button10_Combo1.Name = "button10_Combo1";
-            this.button10_Combo1.Size = new System.Drawing.Size(75, 60);
-            this.button10_Combo1.TabIndex = 1;
-            this.button10_Combo1.Text = "Combo 1";
-            this.button10_Combo1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -528,50 +410,9 @@ namespace HackathonProject_Spring2021
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(75, 58);
             this.button19.TabIndex = 0;
-            this.button19.Text = "Chick-fil-A Waffle Potato Fies";
+            this.button19.Text = "Waffle Fries";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button_largeDrink);
-            this.tabPage4.Controls.Add(this.button_smallDrink);
-            this.tabPage4.Controls.Add(this.button_mediumDrink);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(301, 411);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Drinks";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button_largeDrink
-            // 
-            this.button_largeDrink.Location = new System.Drawing.Point(8, 6);
-            this.button_largeDrink.Name = "button_largeDrink";
-            this.button_largeDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_largeDrink.TabIndex = 3;
-            this.button_largeDrink.Text = "Large";
-            this.button_largeDrink.UseVisualStyleBackColor = true;
-            this.button_largeDrink.Click += new System.EventHandler(this.button_largeDrink_Click);
-            // 
-            // button_smallDrink
-            // 
-            this.button_smallDrink.Location = new System.Drawing.Point(203, 6);
-            this.button_smallDrink.Name = "button_smallDrink";
-            this.button_smallDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_smallDrink.TabIndex = 2;
-            this.button_smallDrink.Text = "Small";
-            this.button_smallDrink.UseVisualStyleBackColor = true;
-            // 
-            // button_mediumDrink
-            // 
-            this.button_mediumDrink.Location = new System.Drawing.Point(105, 6);
-            this.button_mediumDrink.Name = "button_mediumDrink";
-            this.button_mediumDrink.Size = new System.Drawing.Size(92, 40);
-            this.button_mediumDrink.TabIndex = 1;
-            this.button_mediumDrink.Text = "Medium";
-            this.button_mediumDrink.UseVisualStyleBackColor = true;
             // 
             // button_modifyExisting
             // 
@@ -581,6 +422,7 @@ namespace HackathonProject_Spring2021
             this.button_modifyExisting.TabIndex = 15;
             this.button_modifyExisting.Text = "Modify Existing Item";
             this.button_modifyExisting.UseVisualStyleBackColor = true;
+            this.button_modifyExisting.Click += new System.EventHandler(this.button_modifyExisting_Click_1);
             // 
             // button_amtTender
             // 
@@ -644,10 +486,8 @@ namespace HackathonProject_Spring2021
             this.Text = " POS System";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -669,10 +509,8 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button_qty8;
         private System.Windows.Forms.Label total_label;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button_testBurger;
         private System.Windows.Forms.Button button_toGo;
         private System.Windows.Forms.Button button1;
@@ -684,20 +522,8 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button_largeDrink;
-        private System.Windows.Forms.Button button_smallDrink;
-        private System.Windows.Forms.Button button_mediumDrink;
         private System.Windows.Forms.Button button_modifyExisting;
         private System.Windows.Forms.Button button_amtTender;
-        private System.Windows.Forms.Button button14_Combo6;
-        private System.Windows.Forms.Button button13_Combo5;
-        private System.Windows.Forms.Button button12_Combo4;
-        private System.Windows.Forms.Button button11_Combo2;
-        private System.Windows.Forms.Button button10_Combo1;
-        private System.Windows.Forms.Button button18_Combo3;
-        private System.Windows.Forms.Button button17_Combo9;
-        private System.Windows.Forms.Button button16_Combo8;
-        private System.Windows.Forms.Button button15_Combo7;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button25;
