@@ -19,6 +19,14 @@ namespace HackathonProject_Spring2021
             Application.Run(new Form1());
         }
     }
+    public class Variables
+    {
+        public static int chooseReturn;
+        public static Ingredient[] ingredientArr;
+        public static Object[] theArr;
+        public static string[] theSelected;
+        public static int count;
+    }
     public static class ControlID
     {
         public static int theTotal { get; set; }
