@@ -53,8 +53,9 @@ namespace HackathonProject_Spring2021
             this.textBox_sub = new System.Windows.Forms.TextBox();
             this.textBox_total = new System.Windows.Forms.TextBox();
             this.textBox_tax = new System.Windows.Forms.TextBox();
-            this.button_reset = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.button_Pay = new System.Windows.Forms.Button();
+            this.button_reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_pay1
@@ -289,6 +290,7 @@ namespace HackathonProject_Spring2021
             this.textBox_total.ReadOnly = true;
             this.textBox_total.Size = new System.Drawing.Size(89, 20);
             this.textBox_total.TabIndex = 29;
+            this.textBox_total.TextChanged += new System.EventHandler(this.textBox_total_TextChanged);
             // 
             // textBox_tax
             // 
@@ -298,16 +300,6 @@ namespace HackathonProject_Spring2021
             this.textBox_tax.ReadOnly = true;
             this.textBox_tax.Size = new System.Drawing.Size(89, 20);
             this.textBox_tax.TabIndex = 30;
-            // 
-            // button_reset
-            // 
-            this.button_reset.Location = new System.Drawing.Point(484, 300);
-            this.button_reset.Name = "button_reset";
-            this.button_reset.Size = new System.Drawing.Size(78, 24);
-            this.button_reset.TabIndex = 31;
-            this.button_reset.Text = "Reset";
-            this.button_reset.UseVisualStyleBackColor = true;
-            this.button_reset.Click += new System.EventHandler(this.button_back_Click);
             // 
             // label3
             // 
@@ -319,14 +311,37 @@ namespace HackathonProject_Spring2021
             this.label3.TabIndex = 32;
             this.label3.Text = "$";
             // 
+            // button_Pay
+            // 
+            this.button_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button_Pay.ForeColor = System.Drawing.Color.Green;
+            this.button_Pay.Location = new System.Drawing.Point(31, 225);
+            this.button_Pay.Name = "button_Pay";
+            this.button_Pay.Size = new System.Drawing.Size(78, 24);
+            this.button_Pay.TabIndex = 33;
+            this.button_Pay.Text = "PAY";
+            this.button_Pay.UseVisualStyleBackColor = true;
+            this.button_Pay.Click += new System.EventHandler(this.button_Pay_Click);
+            // 
+            // button_reset
+            // 
+            this.button_reset.Location = new System.Drawing.Point(484, 300);
+            this.button_reset.Name = "button_reset";
+            this.button_reset.Size = new System.Drawing.Size(78, 24);
+            this.button_reset.TabIndex = 34;
+            this.button_reset.Text = "Reset";
+            this.button_reset.UseVisualStyleBackColor = true;
+            this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
+            // 
             // AmountTender
             // 
             this.AcceptButton = this.button_payCash;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 327);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.button_reset);
+            this.Controls.Add(this.button_Pay);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox_tax);
             this.Controls.Add(this.textBox_total);
             this.Controls.Add(this.textBox_sub);
@@ -354,6 +369,7 @@ namespace HackathonProject_Spring2021
             this.Name = "AmountTender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AmountTender";
+            this.Load += new System.EventHandler(this.AmountTender_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,7 +401,8 @@ namespace HackathonProject_Spring2021
         private System.Windows.Forms.TextBox textBox_sub;
         private System.Windows.Forms.TextBox textBox_total;
         private System.Windows.Forms.TextBox textBox_tax;
-        private System.Windows.Forms.Button button_reset;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button_Pay;
+        private System.Windows.Forms.Button button_reset;
     }
 }

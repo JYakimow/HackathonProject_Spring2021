@@ -13,8 +13,11 @@ namespace HackathonProject_Spring2021
 {
     public partial class ManagerMenu : Form
     {
-        public ManagerMenu()
+        String Order;
+        String reset = "Total:";
+        public ManagerMenu(String Order)
         {
+            this.Order = Order;
             InitializeComponent();
         }
 
@@ -25,7 +28,8 @@ namespace HackathonProject_Spring2021
 
         private void button_receipt_Click(object sender, EventArgs e)
         {
-
+            DateTime now = DateTime.Now;
+            MessageBox.Show(now + "\n" + Order, "Recipt");
         }
 
         private void button_clockIn_Click(object sender, EventArgs e)
@@ -56,7 +60,7 @@ namespace HackathonProject_Spring2021
 
         private void button_hIn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Notice: " + Environment.NewLine + Environment.NewLine + "Used for employees to clock in." +Environment.NewLine +
+            MessageBox.Show("Notice: " + Environment.NewLine + Environment.NewLine + "Used for employees to clock in." + Environment.NewLine +
                 "Enter in employee id and password.");
         }
 
@@ -70,6 +74,11 @@ namespace HackathonProject_Spring2021
         {
             MessageBox.Show("Notice: " + Environment.NewLine + Environment.NewLine + "Reset the running total and list of orders." + Environment.NewLine +
                 "Enter in employee id and password.");
+        }
+
+        private void button_reset_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
